@@ -18,7 +18,7 @@ For example, to add a new payload to the `domain_allow_list_bypass.json` file, u
 }
 ```
 
-- The `id` should be a sha1 hash of the payload.
+- The `id` should be a sha1 hash of the payload parameters: `${prefix}${payload}${suffix}`.
 - The `payload` may include template strings `<attacker>` and `<allowed>`, which will be replaced with corresponding domain names during wordlist generation.
 - The `description` property is not processed during execution.
 - The `tags` array should only include supported tags: URL, HOST, and CORS. 
