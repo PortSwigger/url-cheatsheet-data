@@ -10,7 +10,7 @@ For example, to add a new payload to the `domain_allow_list_bypass.json` file, u
 
 ```json
 {
-    "id": "a8512d8ba8fce6459d9254779820a581477766e0",
+    "id": "d82a33ae7aa92b0f1f1f5d71a24c0f1197da4e7a",
     "payload": "<attacker>.<allowed>",
     "description": "<attacker>.<allowed>",
     "tags": ["URL", "HOST", "CORS"],
