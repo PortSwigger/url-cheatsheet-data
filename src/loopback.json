@@ -1,0 +1,392 @@
+{
+    "name": "Loopback",
+    "payloads": [
+        {
+            "payload": "[::]",
+            "description": "[::]",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "774d39681f93dd129c28e19122be14831684a1ae"
+        },
+        {
+            "payload": "[::1]",
+            "description": "[::1]",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "f290a8f3c04e67ee70722ae1e0d0a821a1b74408"
+        },
+        {
+            "payload": "[0000:0000:0000:0000:0000:0000:0000:0001]",
+            "description": "fully-expanded form of [::1]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "55be05aa42551c0158a392ce49c09bb1bf5c58da"
+        },
+        {
+            "payload": "[::ffff:7f00:1]",
+            "description": "[::1]",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "363d6e8b3bc70faf9bf55367f127ff502fb3f429"
+        },
+        {
+            "payload": "[::\ufb00\ufb00:7f00:1]",
+            "description": "Latin Small Ligature Ff [::ffff:7f00:1]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "cd5d84d35379c86c52b2a0e07467e445e7bb6d2b"
+        },
+        {
+            "payload": "[::ffff:0000:0000]",
+            "description": "[::ffff:0000:0000]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "be8cb09a795cbcc6c48a7e10647034111c4efe26"
+        },
+        {
+            "payload": "[0:0:0:0:0:ffff:127.0.0.1]",
+            "description": "[0:0:0:0:0:ffff:127.0.0.1]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "0f2db7090d0e751a4774a74a6636fd7cb3f1a190"
+        },
+        {
+            "payload": "[0:0:0:0:0:\ufb00\ufb00:127.0.0.1]",
+            "description": "Latin Small Ligature Ff [0:0:0:0:0:ffff:127.0.0.1]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "0b342b72a8c6668bb150d8fe3f5cf0c0532c8b79"
+        },
+        {
+            "payload": "[0:0:0:0:0:ffff:\u246b7.0.0.1]",
+            "description": "Circled Number Twelve [0:0:0:0:0:ffff:127.0.0.1]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "c5d40677753418f987679aaa900659479225ee9f"
+        },
+        {
+            "payload": "[0:0:0:0:0:ffff:1\u3257.0.0.1]",
+            "description": "Circled Number Twenty Seven [0:0:0:0:0:ffff:127.0.0.1]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "26f378f7a66ab81bae74d7124d776dbe060256bf"
+        },
+        {
+            "payload": "[0000::1]",
+            "description": "[0000::1]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "e9c454687517744a84a0b94a95c6e5dc30e31795"
+        },
+        {
+            "payload": "@0",
+            "description": "@0",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "e0271a38f02001f8eecc3cbbf1bad38d682d7d1b"
+        },
+        {
+            "payload": "0",
+            "description": "0",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "8139fbfe111b7a027c8af94586d38bd8975882d4"
+        },
+        {
+            "payload": "0.0.0.0",
+            "description": "0.0.0.0",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "cfa39a4008237a7be563114230f1aa624ce0c46c"
+        },
+        {
+            "payload": "0x00000000",
+            "description": "Hex form 0.0.0.0",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "47c51c24bc4d8ff3a7079ed95684c960bd1a8ff8"
+        },
+        {
+            "payload": "0000.0000.0000.0000",
+            "description": "Octal form 0.0.0.0",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "335a6cb238cd194a00a1f7475fa09cebc1db3e71"
+        },
+        {
+            "payload": "[::ffff:0.0.0.0]",
+            "description": "IPv4-mapped IPv6 address 0.0.0.0",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "cd6aea8dd1a6c5b0fd1f6626f5e849c3c39afa3b"
+        },
+        {
+            "payload": "00000177.00000000.00000000.00000001",
+            "description": "00000177.00000000.00000000.00000001",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "2c4c0eeaf2af819671cdab1015430fe086e78740"
+        },
+        {
+            "payload": "0177.0000.0000.0001",
+            "description": "0177.0000.0000.0001",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "883ccc07d658f5f090bbe8947a1428c8f68afec8"
+        },
+        {
+            "payload": "017700000001",
+            "description": "017700000001",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "be5727f874bdff561d95b6c1a09703bb79ba5eae"
+        },
+        {
+            "payload": "0\u2470700000001",
+            "description": "Circled Number Seventeen 017700000001",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "d367de4ae675e44e553a7608f8616ae83ece146f"
+        },
+        {
+            "payload": "0x7f.0x00.0x00.0x01",
+            "description": "0x7f.0x00.0x00.0x01",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "943eabb66190f1635930ccf7dc19e5e03cd05081"
+        },
+        {
+            "payload": "0x7f000001",
+            "description": "0x7f000001",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "1b8e6210ed86d2f5aed4a0b94cc2f2c119c3b18d"
+        },
+        {
+            "payload": "127.0.0.1",
+            "description": "127.0.0.1",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "18a114b8a46c2f257d2a84cd3a9ef7d85966cf03"
+        },
+        {
+            "payload": "\u246b7.0.0.1",
+            "description": "Circled Number Twelve 127.0.0.1",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "a6654fd50980c525cec24c491fb1f10d8f5aeb5e"
+        },
+        {
+            "payload": "1\u3257.0.0.1",
+            "description": "Circled Number Twenty Seven 127.0.0.1",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "d3132036819744cb2fa833842140f7ba3ae15350"
+        },
+        {
+            "payload": "127.0.0.2",
+            "description": "127.0.0.2",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "13eb94e26cb3525eb386a363bbbc9e408043a0db"
+        },
+        {
+            "payload": "\u246b7.0.0.2",
+            "description": "Circled Number Twelve 127.0.0.2",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "3ad9956cd47c1c929b085747db4cda1907e47323"
+        },
+        {
+            "payload": "1\u3257.0.0.2",
+            "description": "Circled Number Twenty Seven 127.0.0.2",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "7d6e2bb3154621566d8cbb06331e48148cb528e3"
+        },
+        {
+            "payload": "127.000000000000000.1",
+            "description": "127.000000000000000.1",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "63b554cfb083bde06c105e1a53b2d76d48f71860"
+        },
+        {
+            "payload": "127.1",
+            "description": "127.1",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "232c587a2aff2f53cc4ba140e22db11420b40fca"
+        },
+        {
+            "payload": "2130706433",
+            "description": "2130706433",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "1ac3d04cacc1b188e899c64ab263a16a9a9d4e9c"
+        },
+        {
+            "payload": "\u325130706433",
+            "description": "Circled Number Twenty One 2130706433",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "24ea09462b3747850ff3dd008689eb948efbf331"
+        },
+        {
+            "payload": "2\u246c0706433",
+            "description": "Circled Number Thirteen 2130706433",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "8535c5b287183fd69d9f9e28325a8ef24e9f245b"
+        },
+        {
+            "payload": "21\u325a706433",
+            "description": "Circled Number Thirty 2130706433",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "54e3bd462ad3f50bed897bd80e98d4cb0b3a11c6"
+        },
+        {
+            "payload": "2130706\u32b83",
+            "description": "Circled Number Fourty three 2130706433",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "99a6da5b951c8d91a15f18b33414099a2ef41cd8"
+        },
+        {
+            "payload": "21307064\u325d",
+            "description": "Circled Number Thirty three 2130706433",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "6db6650b380d301246442ad7309d329cd689cb5c"
+        },
+        {
+            "payload": "\u3251\u325a\u2466\u24ea\u2465\u2463\u325d",
+            "description": "Circled Numbers 2130706433",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "cb15c6037e3eee0e7ff506fc8e001b93af11a440"
+        },
+        {
+            "payload": "localhost",
+            "description": "localhost",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "aa2b6caa1bc125a1617a779bf35faf2a7ea71114"
+        },
+        {
+            "payload": "lo\u3388host",
+            "description": "Square Cal localhost",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "5001c74bfa2c7dc3a7da2c9181071dd662973a99"
+        },
+        {
+            "payload": "localho\ufb05",
+            "description": "Latin Small Ligature Long S T localhost",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "656205cf0e4d096054ab429fd2dcbb42365f3522"
+        },
+        {
+            "payload": "localho\ufb06",
+            "description": "Latin Small Ligature St localhost",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "ee76a3748efe5600d5df6dd15f3dac84f18686d0"
+        },
+        {
+            "payload": "\\l\\o\\c\\a\\l\\h\\o\\s\\t",
+            "description": "\\l\\o\\c\\a\\l\\h\\o\\s\\t",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "1460b076c5bc1369b1b5e00bada09464ad5a51b5"
+        },
+        {
+            "payload": "null",
+            "description": "CORS vulnerability with trusted null origin",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "2be88ca4242c76e8253ac62474851065032d6833"
+        },
+        {
+            "payload": "<allowed>.localhost",
+            "description": "Localhost allowed domain bypass",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "97cef03a53eb5bd597deb2eb703e419eb2e70aa1"
+        },
+        {
+            "payload": "\u00adlocalhost",
+            "description": "Normalization of the Soft Hyphen Character will return empty string",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "0fb340de15dae138537c9ed426f7e7ab0515d528"
+        },
+        {
+            "payload": "\u034flocalhost",
+            "description": "Normalization of the Combining Grapheme Joiner (U+034F) will return empty string",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "04fb6f44b388e362e05320b6ee63b794ce4d5882"
+        },
+        {
+            "payload": "\u180blocalhost",
+            "description": "Normalization of the (U+180B) will return empty string",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "41e082b6bfc3aa68a9403e24c2550139706adbdb"
+        },
+        {
+            "payload": "\u180clocalhost",
+            "description": "Normalization of the (U+180C) will return empty string",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "ee2d21f3b0d6d7318e56b92e3068aac87e817b34"
+        },
+        {
+            "payload": "\u180dlocalhost",
+            "description": "Normalization of the (U+180D) will return empty string",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "bf5cc0399f6eb2f14c8a7fcaa1c613895dde07df"
+        },
+        {
+            "payload": "\u180elocalhost",
+            "description": "Normalization of the (U+180E) will return empty string",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "dc225121b0165fa18724d084b0e926472cd89328"
+        },
+        {
+            "payload": "\u180flocalhost",
+            "description": "Normalization of the Undefined Character (U+180F) will return empty string",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "0b1db671bf26764c732b49a3bbd301a175d6811d"
+        },
+        {
+            "payload": "\u200blocalhost",
+            "description": "Normalization of the Zero Width Space Character will return empty string",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "bc06dd2c8e84321c7d240586ed99d8ede51e2031"
+        },
+        {
+            "payload": "\u2060localhost",
+            "description": "Normalization of the Word Joiner (U+2060) will return empty string",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "6bd275bea05fcaa52b914d8f98204dce828fc6e6"
+        },
+        {
+            "payload": "\u2064localhost",
+            "description": "Normalization of the Invisible Plus (U+2064) will return empty string",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "b118f85620996226feec7ad296eef34cfb21ecac"
+        }
+    ]
+}

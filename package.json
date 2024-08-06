@@ -1,0 +1,31 @@
+{
+  "name": "url-cheatsheet-data",
+  "version": "1.0.0",
+  "description": "URL validation bypass cheat sheet data",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PortSwigger/url-cheatsheet-data.git"
+  },
+  "keywords": [
+    "cheat",
+    "sheet"
+  ],
+  "author": "Zakhar Fedotkin",
+  "license": "The copyright for this project belongs to PortSwigger Web Security",
+  "bugs": {
+    "url": "https://github.com/PortSwigger/url-cheatsheet-data/issues"
+  },
+  "homepage": "https://github.com/PortSwigger/url-cheatsheet-data#readme",
+  "dependencies": {
+    "ajv": "^8.17.1"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  }
+}

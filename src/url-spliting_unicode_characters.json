@@ -1,0 +1,362 @@
+{
+    "name": "URL-splitting Unicode characters",
+    "payloads": [
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2a74<allowed>",
+            "description": " URL-splitting Unicode characters ::",
+            "id": "ce173786c6c8219618af8b2e7eb1b77081981cbd"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\uff1a<allowed>",
+            "description": " URL-splitting Unicode characters :",
+            "id": "900407cfa0822f509644f88e7c582a6849d10906"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ufe55<allowed>",
+            "description": " URL-splitting Unicode characters :",
+            "id": "d065aeef1c894a84228124ff535709e6049d8ed3"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ufe13<allowed>",
+            "description": " URL-splitting Unicode characters :",
+            "id": "d955b21f083f4570355906d3abb4772bb7bde3a0"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2049<allowed>",
+            "description": " URL-splitting Unicode characters ?",
+            "id": "a9a1f374d17d1a92a40c3d968c78a754b70b8df2"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2048<allowed>",
+            "description": " URL-splitting Unicode characters ?",
+            "id": "d2d8f7e349ff73a12f4c6600c11932b06721fba0"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2047<allowed>",
+            "description": " URL-splitting Unicode characters ??",
+            "id": "c120774e27a8b5b7c4ee1a882cd38f1eb08376b5"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\uff1f<allowed>",
+            "description": " URL-splitting Unicode characters ?",
+            "id": "59465b75de8b391a60c5e57b4952bb8c30abe1ae"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ufe56<allowed>",
+            "description": " URL-splitting Unicode characters ?",
+            "id": "0787cb4afc9b3c11f17aac087b80f203282b77f0"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ufe16<allowed>",
+            "description": " URL-splitting Unicode characters ?",
+            "id": "b0320b30a71051559304ef0c2e60179c246a0487"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2026<allowed>",
+            "description": " URL-splitting Unicode characters ...",
+            "id": "2f52df617bee2c9d82be632d70c8da763816ea5d"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ufe19<allowed>",
+            "description": " URL-splitting Unicode characters ...",
+            "id": "82ef60e06d86425ea7136e38f34bc420495172d0"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2025<allowed>",
+            "description": " URL-splitting Unicode characters ..",
+            "id": "2a2789887311325b236b35dfa287d1bc274c1e4f"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ufe30<allowed>",
+            "description": " URL-splitting Unicode characters ..",
+            "id": "668040dff0dfa7a13568c7dc4eab546b7810ce2a"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2024<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "76960504d99178d39cc2c40033f7a6e05bc53357"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ufe52<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "0f02c7f2ff4deb30c61b447c53de649acb881ffe"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\uff20<allowed>",
+            "description": " URL-splitting Unicode characters @",
+            "id": "87833f6cf76c0552147058caef14bf5e409d2bed"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ufe6b<allowed>",
+            "description": " URL-splitting Unicode characters @",
+            "id": "87e76eee1b817b489f9aa77e8eb12ebd5fc3a1c7"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\uff0f<allowed>",
+            "description": " URL-splitting Unicode characters /",
+            "id": "66a6c0ab76dc0fc995320d00f115de33c8fca4ab"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\uff3c<allowed>",
+            "description": " URL-splitting Unicode characters \\",
+            "id": "26024ea0b4900e3a4639419c24fe1e7c591b544f"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ufe68<allowed>",
+            "description": " URL-splitting Unicode characters \\",
+            "id": "823230cba499948d0220e0174ae224b820126bd3"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\uff03<allowed>",
+            "description": " URL-splitting Unicode characters #",
+            "id": "8696eec75e130be0f8064d337b41aba679da76bb"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ufe5f<allowed>",
+            "description": " URL-splitting Unicode characters #",
+            "id": "16464e0f9500679ed754ee6009e239ff0b5135d8"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ud83c<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "1b6233423e4100c0a05774d5ab7de2d49b72e11c"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2488<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "c22ae5661a3e8cf46ba67b6b906d66cb4e54588e"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2491<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "25ccc7b9e28bcaa3b651f080de0366a24b503626"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2492<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "883bc634c898441dd6468b6e7eae270b2704422c"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2493<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "8e31cc6906c5ff83cbe1aab706887558021186e3"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2494<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "83b964545f9d2a7690b8fc4eb02838fbbe9141eb"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2495<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "4e22e465b380c7a8dc66b4da240d0762181b2c25"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2496<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "35a4a8e7c0f775877c2d0ccbab584a6624c6a695"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2497<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "d3b5da8076839801a5db9ed3cea400e8b91ae0d7"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2498<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "c585df8b4b35a85dc42571261416b81dd77bdb80"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2499<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "f8a6bd96ec7590aa8af9ebce9129e974087a62f3"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u249a<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "998be41b98dfd0b7bd3748e0e8628d3053467e39"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2489<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "8b12a515eb0e2bcb2a75b4f44ab0abe22c693997"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u249b<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "a77e698a459e0dbce6fe578a20110a737cf3f515"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u248a<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "2a9c1f8196729cacd016a64e54594333b4b31e13"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u248b<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "0786759c60cbf0e49029b8c805ce9b347f043f1d"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u248c<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "c977d35da5188d4cb65e96be3185717f604689d8"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u248d<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "d314592f991a4624c816719247ecf71e5262c46c"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u248e<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "8b89e626313a9d8935e9dabeaab9d3a81a73e313"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u248f<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "4e68d5dee777ec89fd296e5aed4232d3352a3f4c"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2490<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "18cac8fd5ab3150ead6bdf14f1a887488470d8dd"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u33c2<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "574c99352aeb2459ec389521990d1c3ca0693366"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2100<allowed>",
+            "description": " URL-splitting Unicode characters /",
+            "id": "7ef5d30221e065bdf7e209f96b7a678f0d9880dc"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2101<allowed>",
+            "description": " URL-splitting Unicode characters /",
+            "id": "887e117ebfd05f32d5caa607dcec1863fe12a74a"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2105<allowed>",
+            "description": " URL-splitting Unicode characters /",
+            "id": "87b02d270150fb0a52ad168dc1b4d20eed22bf4d"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u2106<allowed>",
+            "description": " URL-splitting Unicode characters /",
+            "id": "66812c84a21275e15ebf4e1346eb1c2612d1697c"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u33c7<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "e78d5d3d56fabbcd0190dd01fae48f3c56a2cef8"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\u33d8<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "1d8d15a2cbcf62c4f954ad75b2ed8de5ff7e7567"
+        }
+    ]
+}

@@ -1,0 +1,26 @@
+{
+    "name": "IPv6",
+    "payloads": [
+        {
+            "payload": "[::%<attacker>]",
+            "description": "ZoneID attack var 1 https://www.rfc-editor.org/rfc/rfc6874.html#section-3",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "67bb5f0d059c6cf5bba3ca424e494aa04ccf07a6"
+        },
+        {
+            "payload": "[::%25<attacker>]",
+            "description": "ZoneID attack var 2 https://www.rfc-editor.org/rfc/rfc6874.html#section-3",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "006dafc81809fdd4f094e5fa3248d53287c9a4b7"
+        },
+        {
+            "payload": "[v1.<attacker>]",
+            "description": "IPvFuture attack https://www.rfc-editor.org/rfc/rfc3986.html#section-3.2.2",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "26a7f6e989f7dcafb328d067a932f89b80a352c0"
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "https://portswigger.net/",
+    "title": "Payload",
+    "description": "URL validation bypass cheat sheet payload schema file",
+    "type": "object",
+    "properties": {
+        "name": {
+            "description": "Wordlist name",
+            "type": "string"
+        },
+        "payloads": {
+            "description": "Payloads for the wordlist",
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "The unique identifier for a product",
+                        "type": "string"
+                    },
+                    "payload": {
+                        "description": "Payload string, templates <attacker> and <allowed> can be used to be replaced with user values",
+                        "type": "string"
+                    },
+                    "description": {
+                        "description": "Payload description",
+                        "type": "string"
+                    },
+                    "prefix": {
+                        "description": "Payload prefix: schema",
+                        "type": "string"
+                    },
+                    "suffix": {
+                        "description": "Payload suffix: path",
+                        "type": "string"
+                    },
+                    "port": {
+                        "description": "URL port",
+                        "type": "integer"
+                    },
+                    "tags": {
+                        "description": "Tags for the payload",
+                        "type": "array",
+                        "items": {
+                            "enum": ["URL", "HOST", "CORS"]
+                        }
+                    },
+                    "filters": {
+                        "description": "Filters for the payload",
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "required": ["id", "payload", "description", "tags"]
+        }
+    },
+    "required": ["name", "payloads"]
+}

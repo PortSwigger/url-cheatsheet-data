@@ -1,0 +1,498 @@
+{
+    "name": "Fake relative URLs",
+    "payloads": [
+        {
+            "payload": "\r\n//<attacker>",
+            "description": "New line \\r\\n URL split //<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "2be7dba99b4fe4592c981a988b33adc8414b7cfc"
+        },
+        {
+            "payload": "\r\n\\\\<attacker>",
+            "description": "New line \\r\\n URL split \\\\<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "e5ddb6c7744a1dd437293f35b6e3a375e23cba05"
+        },
+        {
+            "payload": "../../../../../../../..//<attacker>",
+            "description": "../../../../../../../..//<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "8e1783bc426f5dcf3379a6bea9dc18a68dd974b3"
+        },
+        {
+            "payload": "..\\..\\..\\..\\..\\..\\..\\..\\\\<attacker>",
+            "description": "..\\..\\..\\..\\..\\..\\..\\..\\\\<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "8d0e0834582d5db1d122c1da749c14e9f01f3819"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "http:<attacker>",
+            "prefix": "http:",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "2fd08ec2a085c73e8f3adde8ced34afaab73510c"
+        },
+        {
+            "payload": "@<attacker>",
+            "description": "@<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "3a3a1269ad91c19d6836738f88c22c2d2e828a04"
+        },
+        {
+            "payload": "#<attacker>",
+            "description": "#<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "90158c6e56c687aaf511062990bb692400c61367"
+        },
+        {
+            "payload": "//<attacker>",
+            "description": "//<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "b4b07ea11af6244ed0227da67fa422166fd33aa3"
+        },
+        {
+            "payload": "\\\\<attacker>",
+            "description": "http:\\\\<attacker>\\",
+            "prefix": "http:",
+            "suffix": "\\",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "97aa0ab060c87c215b4031b4602f0a16ff9ee3a2"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "<attacker>",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "cc92cd90037481b4854610b4a09b1a9781f44313"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0000http://<attacker>",
+            "filters": [],
+            "prefix": "\u0000http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "5492b1d230b25c8e3f38afeb60b86eca6f43ca21"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0001http://<attacker>",
+            "filters": [],
+            "prefix": "\u0001http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "725d729a546c9ef846643efb56d4b054ec9455c5"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0002http://<attacker>",
+            "filters": [],
+            "prefix": "\u0002http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "4beb657c60f7d77deeb9553c452d1ae60f29ea91"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0003http://<attacker>",
+            "filters": [],
+            "prefix": "\u0003http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "db28290839728e7d84bc1bc7bb9bcd8a1722fbb0"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0004http://<attacker>",
+            "filters": [],
+            "prefix": "\u0004http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "595436103b180ef0631cf33f04080820394bc0b8"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0005http://<attacker>",
+            "filters": [],
+            "prefix": "\u0005http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "a0c314cdaca64075c33d2d5bcf09cd1c5528d491"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0006http://<attacker>",
+            "filters": [],
+            "prefix": "\u0006http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "eb4e0b71389ece25febcf450ede12de5238c159d"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0007http://<attacker>",
+            "filters": [],
+            "prefix": "\u0007http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "ba5b0a0d17498890af12f126af9a01919fe0e001"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\bhttp://<attacker>",
+            "filters": [],
+            "prefix": "\bhttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "69d2af51a4d4fe0ee2885d0cf96988200bedb17a"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\thttp://<attacker>",
+            "filters": [],
+            "prefix": "\thttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "9939e691963f62b6ca1782f8b29118dc7c855753"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\nhttp://<attacker>",
+            "filters": [],
+            "prefix": "\nhttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "aa399fe33f3adf4bffa965bd220ebfa4ad1fe6a7"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u000bhttp://<attacker>",
+            "filters": [],
+            "prefix": "\u000bhttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "be6cc25de22b39339f6945470c7e4aa480053d6f"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\fhttp://<attacker>",
+            "filters": [],
+            "prefix": "\fhttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "85a36b9e4af4d9145bb0d02a64720f7d4585984f"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\rhttp://<attacker>",
+            "filters": [],
+            "prefix": "\rhttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "4227eed925aa8ee2930ec3e1bacdf91d34f3641a"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u000ehttp://<attacker>",
+            "filters": [],
+            "prefix": "\u000ehttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "27013afeef04a9432826ba4c6c744b09ad007d45"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u000fhttp://<attacker>",
+            "filters": [],
+            "prefix": "\u000fhttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "d2bfdf4fc8935a83c80d57b6e66c4a1212490cf2"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0010http://<attacker>",
+            "filters": [],
+            "prefix": "\u0010http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "15f6321a2d955024d326dcc346a05f9e2ab06e54"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0011http://<attacker>",
+            "filters": [],
+            "prefix": "\u0011http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "15856aac15e17eaf767d61d151c230b54c47e5c0"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0012http://<attacker>",
+            "filters": [],
+            "prefix": "\u0012http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "f0c386f31ce67d6ddf215853938e2950d7282d7c"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0013http://<attacker>",
+            "filters": [],
+            "prefix": "\u0013http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "7d60404537279448dc8a796d5d94689705f9492b"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0014http://<attacker>",
+            "filters": [],
+            "prefix": "\u0014http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "5116abdec32a9548186ad5b605c5a84d5b25b5d0"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0015http://<attacker>",
+            "filters": [],
+            "prefix": "\u0015http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "52b4dcfa082e1b57eced818b7a69f01b93e18be8"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0016http://<attacker>",
+            "filters": [],
+            "prefix": "\u0016http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "ff8d49ace2bc1431f3e67b417665e60970ade5c9"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0017http://<attacker>",
+            "filters": [],
+            "prefix": "\u0017http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "37684ab38112706b4ff6af828e47e1fb9f51ae2d"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0018http://<attacker>",
+            "filters": [],
+            "prefix": "\u0018http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "10dff9478c68773d1cb13613dc99ac4e6e342b0f"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u0019http://<attacker>",
+            "filters": [],
+            "prefix": "\u0019http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "8f592f4ae8e0ea947edda88c1b6898a2b00c32ac"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u001ahttp://<attacker>",
+            "filters": [],
+            "prefix": "\u001ahttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "e3d0a0b8f6e4dfd5a17515c67eaf407f4ee250a4"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u001bhttp://<attacker>",
+            "filters": [],
+            "prefix": "\u001bhttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "5591961133db50bf4aa819036dbd2faddf72d900"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u001chttp://<attacker>",
+            "filters": [],
+            "prefix": "\u001chttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "b6856a3c020c0d5181580e9b59805aa609158083"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u001dhttp://<attacker>",
+            "filters": [],
+            "prefix": "\u001dhttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "708eca4a6cc2f882d5e411d2d1fd1e603a04e7d8"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u001ehttp://<attacker>",
+            "filters": [],
+            "prefix": "\u001ehttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "da497bc6a4c326cae7470f60611d4cc663f2472d"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\u001fhttp://<attacker>",
+            "filters": [],
+            "prefix": "\u001fhttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "cae726a33f3bb6e8cee38e927fa844775146c410"
+        },
+        {
+            "payload": "<attacker>",
+            "description": " http://<attacker>",
+            "filters": [],
+            "prefix": " http://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "0572066412cf61c59dc8f23ea664f94d828431b7"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "h\tttp://<attacker>",
+            "filters": [],
+            "prefix": "h\tttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "44407f2c6750ade851828ab12d3f7ebe0e1e769b"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "h\nttp://<attacker>",
+            "filters": [],
+            "prefix": "h\nttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "e97cbf16f509779f22609afec001a4a1c00a51bd"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "h\rttp://<attacker>",
+            "filters": [],
+            "prefix": "h\rttp://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "a82c1f27966a0864d6d1398361dc55af896e1fa7"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "http\t://<attacker>",
+            "filters": [],
+            "prefix": "http\t://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "8f0455de93c6da722c590287dcc1c36211382cc3"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "http\n://<attacker>",
+            "filters": [],
+            "prefix": "http\n://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "486308f0be532d6178b0be35b9a2a9fc67d48212"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "http\r://<attacker>",
+            "filters": [],
+            "prefix": "http\r://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "32fec641d76504715cba789328ebafa2a645e40e"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\thttp\t://<attacker>",
+            "filters": [],
+            "prefix": "\thttp\t://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "a02d348d210efa779f995fa47a6618ed564cb926"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\nhttp\n://<attacker>",
+            "filters": [],
+            "prefix": "\nhttp\n://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "95984673cfbeca4eeae3e7799cbbfb2c75d3de29"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\rhttp\r://<attacker>",
+            "filters": [],
+            "prefix": "\rhttp\r://",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "8ee4f4385d6dfd689346fef4d7be4fc812692a68"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "http:/\\<attacker>",
+            "filters": [],
+            "prefix": "http:/\\",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "21181eedd5c3cc8e24107d573e79a16b5a56553e"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "http:/\\\\<attacker>",
+            "filters": [],
+            "prefix": "http:/\\\\",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "301cc93d9a2415cd5d6b000427024a7efcde8cec"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "http:\\\\<attacker>",
+            "filters": [],
+            "prefix": "http:\\\\",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "9bfc4198128fafe0313943366c68c0c1a1b34fea"
+        }
+    ]
+}
