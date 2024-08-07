@@ -61,9 +61,7 @@ async function aggregateJson() {
         const wordlist = await validateWordlist(validate, filePath);
         
         wordlist.payloads.forEach(element => {
-            if (!element.id) {
-                element.id = generateId(element.prefix, element.payload, element.suffix);
-            }
+            element.id = generateId(element.prefix, element.payload, element.suffix);
         });
 
         wordlists.push(wordlist);

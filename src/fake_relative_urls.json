@@ -84,13 +84,6 @@
         },
         {
             "payload": "<attacker>",
-            "description": "<attacker>",
-            "filters": [],
-            "tags": ["URL"],
-            "id": "cc92cd90037481b4854610b4a09b1a9781f44313"
-        },
-        {
-            "payload": "<attacker>",
             "description": "\u0000http://<attacker>",
             "filters": [],
             "prefix": "\u0000http://",

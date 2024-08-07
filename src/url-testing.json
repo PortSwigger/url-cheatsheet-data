@@ -1,0 +1,11 @@
+{
+    "name": "URL Test",
+    "payloads": [
+        {
+            "filters": [],
+            "tags": ["URL","HOST","CORS"],
+            "payload": "<attacker>",
+            "description": "Test attacker's URL"
+        }
+    ]
+}

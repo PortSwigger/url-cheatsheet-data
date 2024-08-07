@@ -158,8 +158,8 @@
             "id": "26da92c70bc955f06d0548a6c648a2fa85fb4720"
         },
         {
-            "payload": "<attacker>\\<allowed>/",
-            "description": "<attacker>\\<allowed>/",
+            "payload": "<attacker>\\<allowed>",
+            "description": "<attacker>\\<allowed>",
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "b107cb5fe53ec93eed7a2fcbc1c7f22d8e797df0"
@@ -172,8 +172,8 @@
             "id": "89ceb3fd127c9db29d3b7325ce4f6a78daac9d78"
         },
         {
-            "payload": "<attacker>\\anything@<allowed>/",
-            "description": "<attacker>\\anything@<allowed>/",
+            "payload": "<attacker>\\anything@<allowed>",
+            "description": "<attacker>\\anything@<allowed>",
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "5178bbecff4c51797164b11cafd604dbe2caa2e1"
@@ -333,70 +333,70 @@
             "id": "8923ea0db18f14de8153269acde97aed1d57fd9f"
         },
         {
-            "payload": "<allowed>.!.<attacker>/",
+            "payload": "<allowed>.!.<attacker>",
             "description": "Safari allows ! as subdomain http://<allowed>.!.<attacker>/",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "df371f068cb71ffdbb3e00912bfee1eeb200541b"
         },
         {
-            "payload": "<allowed>.&.<attacker>/",
+            "payload": "<allowed>.&.<attacker>",
             "description": "Safari allows & as subdomain http://<allowed>.&.<attacker>/",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "900e1debc0135aff15df71edbdaed4b8bb137bb0"
         },
         {
-            "payload": "<allowed>.'.<attacker>/",
+            "payload": "<allowed>.'.<attacker>",
             "description": "Safari allows ' as subdomain http://<allowed>.'.<attacker>/",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "95626bf2445b51e71485e9ba7c50649001ecc092"
         },
         {
-            "payload": "<allowed>.(.<attacker>/",
+            "payload": "<allowed>.(.<attacker>",
             "description": "Safari allows ( as subdomain http://<allowed>.(.<attacker>/",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "0a433d784bfb42d881b80ce9d2bb86e0366a8023"
         },
         {
-            "payload": "<allowed>.).<attacker>/",
+            "payload": "<allowed>.).<attacker>",
             "description": "Safari allows ) as subdomain http://<allowed>.).<attacker>/",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "999076c5ab40cf48250f337e3bce110118987cb6"
         },
         {
-            "payload": "<allowed>.*.<attacker>/",
+            "payload": "<allowed>.*.<attacker>",
             "description": "Safari allows * as subdomain http://<allowed>.*.<attacker>/",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "82a2851f186e8abb82eec167931ae31f05881e8b"
         },
         {
-            "payload": "<allowed>.,.<attacker>/",
+            "payload": "<allowed>.,.<attacker>",
             "description": "Safari allows , as subdomain http://<allowed>.,.<attacker>/",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "4ddbb116e2818ee909c3565bb82ad40f42caff17"
         },
         {
-            "payload": "<allowed>.;.<attacker>/",
+            "payload": "<allowed>.;.<attacker>",
             "description": "Safari allows ; as subdomain http://<allowed>.;.<attacker>/",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "c94fe560fc736ae464152b9a71a483bd96cd7c21"
         },
         {
-            "payload": "<allowed>.=.<attacker>/",
+            "payload": "<allowed>.=.<attacker>",
             "description": "Safari allows = as subdomain http://<allowed>.=.<attacker>/",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "8b6fb6c6d98e58b72515ea09f8655fb7b127721c"
         },
         {
-            "payload": "<allowed>.~.<attacker>/",
+            "payload": "<allowed>.~.<attacker>",
             "description": "Safari allows ~ as subdomain http://<allowed>.~.<attacker>/",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
@@ -499,7 +499,7 @@
         },
         {
             "payload": "\\\\<attacker>",
-            "description": "Unencrypted domain ends with http://s<allowed>/",
+            "description": "Fake relative url \\\\<attacker>",
             "filters": [],
             "tags": ["URL"],
             "id": "4b961c715508b6364e5903a76530cb9436992850"
