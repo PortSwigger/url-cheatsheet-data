@@ -3,9 +3,10 @@
     "payloads": [
         {
             "filters": [],
-            "tags": ["URL","HOST","CORS"],
+            "tags": ["URL", "HOST", "CORS"],
             "payload": "<attacker>",
-            "description": "Test attacker's URL"
+            "description": "Test attacker's URL",
+            "id": "cc92cd90037481b4854610b4a09b1a9781f44313"
         }
     ]
 }

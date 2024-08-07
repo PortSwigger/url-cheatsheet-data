@@ -165,13 +165,6 @@
         {
             "filters": [],
             "tags": ["URL"],
-            "payload": "<attacker>\ud83c<allowed>",
-            "description": " URL-splitting Unicode characters .",
-            "id": "1b6233423e4100c0a05774d5ab7de2d49b72e11c"
-        },
-        {
-            "filters": [],
-            "tags": ["URL"],
             "payload": "<attacker>\u2488<allowed>",
             "description": " URL-splitting Unicode characters .",
             "id": "c22ae5661a3e8cf46ba67b6b906d66cb4e54588e"
@@ -357,6 +350,13 @@
             "payload": "<attacker>\u33d8<allowed>",
             "description": " URL-splitting Unicode characters .",
             "id": "1d8d15a2cbcf62c4f954ad75b2ed8de5ff7e7567"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ud83c<allowed>",
+            "description": " URL-splitting Unicode characters .",
+            "id": "1b6233423e4100c0a05774d5ab7de2d49b72e11c"
         }
     ]
 }

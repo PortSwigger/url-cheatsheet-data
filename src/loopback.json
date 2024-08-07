@@ -16,11 +16,18 @@
             "id": "f290a8f3c04e67ee70722ae1e0d0a821a1b74408"
         },
         {
-            "payload": "[0000:0000:0000:0000:0000:0000:0000:0001]",
-            "description": "fully-expanded form of [::1]",
+            "payload": "[::ffff:0.0.0.0]",
+            "description": "IPv4-mapped IPv6 address 0.0.0.0",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "55be05aa42551c0158a392ce49c09bb1bf5c58da"
+            "id": "cd6aea8dd1a6c5b0fd1f6626f5e849c3c39afa3b"
+        },
+        {
+            "payload": "[::ffff:0000:0000]",
+            "description": "[::ffff:0000:0000]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "be8cb09a795cbcc6c48a7e10647034111c4efe26"
         },
         {
             "payload": "[::ffff:7f00:1]",
@@ -37,32 +44,11 @@
             "id": "cd5d84d35379c86c52b2a0e07467e445e7bb6d2b"
         },
         {
-            "payload": "[::ffff:0000:0000]",
-            "description": "[::ffff:0000:0000]",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "be8cb09a795cbcc6c48a7e10647034111c4efe26"
-        },
-        {
             "payload": "[0:0:0:0:0:ffff:127.0.0.1]",
             "description": "[0:0:0:0:0:ffff:127.0.0.1]",
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "0f2db7090d0e751a4774a74a6636fd7cb3f1a190"
-        },
-        {
-            "payload": "[0:0:0:0:0:\ufb00\ufb00:127.0.0.1]",
-            "description": "Latin Small Ligature Ff [0:0:0:0:0:ffff:127.0.0.1]",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "0b342b72a8c6668bb150d8fe3f5cf0c0532c8b79"
-        },
-        {
-            "payload": "[0:0:0:0:0:ffff:\u246b7.0.0.1]",
-            "description": "Circled Number Twelve [0:0:0:0:0:ffff:127.0.0.1]",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "c5d40677753418f987679aaa900659479225ee9f"
         },
         {
             "payload": "[0:0:0:0:0:ffff:1\u3257.0.0.1]",
@@ -72,6 +58,20 @@
             "id": "26f378f7a66ab81bae74d7124d776dbe060256bf"
         },
         {
+            "payload": "[0:0:0:0:0:ffff:\u246b7.0.0.1]",
+            "description": "Circled Number Twelve [0:0:0:0:0:ffff:127.0.0.1]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "c5d40677753418f987679aaa900659479225ee9f"
+        },
+        {
+            "payload": "[0:0:0:0:0:\ufb00\ufb00:127.0.0.1]",
+            "description": "Latin Small Ligature Ff [0:0:0:0:0:ffff:127.0.0.1]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "0b342b72a8c6668bb150d8fe3f5cf0c0532c8b79"
+        },
+        {
             "payload": "[0000::1]",
             "description": "[0000::1]",
             "filters": [],
@@ -79,11 +79,32 @@
             "id": "e9c454687517744a84a0b94a95c6e5dc30e31795"
         },
         {
+            "payload": "[0000:0000:0000:0000:0000:0000:0000:0001]",
+            "description": "fully-expanded form of [::1]",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "55be05aa42551c0158a392ce49c09bb1bf5c58da"
+        },
+        {
             "payload": "@0",
             "description": "@0",
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "e0271a38f02001f8eecc3cbbf1bad38d682d7d1b"
+        },
+        {
+            "payload": "\\l\\o\\c\\a\\l\\h\\o\\s\\t",
+            "description": "\\l\\o\\c\\a\\l\\h\\o\\s\\t",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "1460b076c5bc1369b1b5e00bada09464ad5a51b5"
+        },
+        {
+            "payload": "<allowed>.localhost",
+            "description": "Localhost allowed domain bypass",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "97cef03a53eb5bd597deb2eb703e419eb2e70aa1"
         },
         {
             "payload": "0",
@@ -100,25 +121,11 @@
             "id": "cfa39a4008237a7be563114230f1aa624ce0c46c"
         },
         {
-            "payload": "0x00000000",
-            "description": "Hex form 0.0.0.0",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "47c51c24bc4d8ff3a7079ed95684c960bd1a8ff8"
-        },
-        {
             "payload": "0000.0000.0000.0000",
             "description": "Octal form 0.0.0.0",
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "335a6cb238cd194a00a1f7475fa09cebc1db3e71"
-        },
-        {
-            "payload": "[::ffff:0.0.0.0]",
-            "description": "IPv4-mapped IPv6 address 0.0.0.0",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "cd6aea8dd1a6c5b0fd1f6626f5e849c3c39afa3b"
         },
         {
             "payload": "00000177.00000000.00000000.00000001",
@@ -149,11 +156,46 @@
             "id": "d367de4ae675e44e553a7608f8616ae83ece146f"
         },
         {
+            "payload": "0x00000000",
+            "description": "Hex form 0.0.0.0",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "47c51c24bc4d8ff3a7079ed95684c960bd1a8ff8"
+        },
+        {
+            "payload": "0x100000000",
+            "description": "Hexadecimal IP of 0.0.0.0 with overflow",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "ecc23a46f1d5cfa882a8bc47b154f7c0dcc75db3"
+        },
+        {
+            "payload": "0x17f000001",
+            "description": "Hexadecimal IP of 127.0.0.1 with overflow",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "1afd8953235bf9334d57361a188de36775ab11e4"
+        },
+        {
+            "payload": "0x17f000002",
+            "description": "Hexadecimal IP of 127.0.0.2 with overflow",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "f6b61f293f748dd6e8a1dd2a7aa6a3f99999212c"
+        },
+        {
             "payload": "0x7f.0x00.0x00.0x01",
             "description": "0x7f.0x00.0x00.0x01",
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "943eabb66190f1635930ccf7dc19e5e03cd05081"
+        },
+        {
+            "payload": "0x7f.0x00.0x00.0x02",
+            "description": "Hexadecimal IP of 127.0.0.2",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "9e6f1b0eca78d0b1d7f7c8c74b1c26eb1fa63f48"
         },
         {
             "payload": "0x7f000001",
@@ -163,18 +205,18 @@
             "id": "1b8e6210ed86d2f5aed4a0b94cc2f2c119c3b18d"
         },
         {
+            "payload": "0x7f000002",
+            "description": "Hexadecimal IP of 127.0.0.2",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "8661eabf8e436fc6652faf92b2296af65850bb96"
+        },
+        {
             "payload": "127.0.0.1",
             "description": "127.0.0.1",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "18a114b8a46c2f257d2a84cd3a9ef7d85966cf03"
-        },
-        {
-            "payload": "\u246b7.0.0.1",
-            "description": "Circled Number Twelve 127.0.0.1",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "a6654fd50980c525cec24c491fb1f10d8f5aeb5e"
         },
         {
             "payload": "1\u3257.0.0.1",
@@ -184,6 +226,13 @@
             "id": "d3132036819744cb2fa833842140f7ba3ae15350"
         },
         {
+            "payload": "\u246b7.0.0.1",
+            "description": "Circled Number Twelve 127.0.0.1",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "a6654fd50980c525cec24c491fb1f10d8f5aeb5e"
+        },
+        {
             "payload": "127.0.0.2",
             "description": "127.0.0.2",
             "filters": [],
@@ -191,18 +240,18 @@
             "id": "13eb94e26cb3525eb386a363bbbc9e408043a0db"
         },
         {
-            "payload": "\u246b7.0.0.2",
-            "description": "Circled Number Twelve 127.0.0.2",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "3ad9956cd47c1c929b085747db4cda1907e47323"
-        },
-        {
             "payload": "1\u3257.0.0.2",
             "description": "Circled Number Twenty Seven 127.0.0.2",
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "7d6e2bb3154621566d8cbb06331e48148cb528e3"
+        },
+        {
+            "payload": "\u246b7.0.0.2",
+            "description": "Circled Number Twelve 127.0.0.2",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "3ad9956cd47c1c929b085747db4cda1907e47323"
         },
         {
             "payload": "127.000000000000000.1",
@@ -220,45 +269,45 @@
         },
         {
             "payload": "2130706433",
-            "description": "2130706433",
+            "description": "Decimal IP of 127.0.0.1",
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "1ac3d04cacc1b188e899c64ab263a16a9a9d4e9c"
         },
         {
-            "payload": "\u325130706433",
-            "description": "Circled Number Twenty One 2130706433",
+            "payload": "21307064\u325d",
+            "description": "Circled Number Thirty three Decimal IP of 127.0.0.1",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "24ea09462b3747850ff3dd008689eb948efbf331"
-        },
-        {
-            "payload": "2\u246c0706433",
-            "description": "Circled Number Thirteen 2130706433",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "8535c5b287183fd69d9f9e28325a8ef24e9f245b"
-        },
-        {
-            "payload": "21\u325a706433",
-            "description": "Circled Number Thirty 2130706433",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "54e3bd462ad3f50bed897bd80e98d4cb0b3a11c6"
+            "id": "6db6650b380d301246442ad7309d329cd689cb5c"
         },
         {
             "payload": "2130706\u32b83",
-            "description": "Circled Number Fourty three 2130706433",
+            "description": "Circled Number Fourty three Decimal IP of 127.0.0.1",
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "99a6da5b951c8d91a15f18b33414099a2ef41cd8"
         },
         {
-            "payload": "21307064\u325d",
-            "description": "Circled Number Thirty three 2130706433",
+            "payload": "21\u325a706433",
+            "description": "Circled Number Thirty Decimal IP of 127.0.0.1",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "6db6650b380d301246442ad7309d329cd689cb5c"
+            "id": "54e3bd462ad3f50bed897bd80e98d4cb0b3a11c6"
+        },
+        {
+            "payload": "2\u246c0706433",
+            "description": "Circled Number Thirteen Decimal IP of 127.0.0.1",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "8535c5b287183fd69d9f9e28325a8ef24e9f245b"
+        },
+        {
+            "payload": "\u325130706433",
+            "description": "Circled Number Twenty One Decimal IP of 127.0.0.1",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "24ea09462b3747850ff3dd008689eb948efbf331"
         },
         {
             "payload": "\u3251\u325a\u2466\u24ea\u2465\u2463\u325d",
@@ -268,55 +317,18 @@
             "id": "cb15c6037e3eee0e7ff506fc8e001b93af11a440"
         },
         {
+            "payload": "45080379393",
+            "description": "Decimal IP of 127.0.0.1 with x10 overflow",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "fb228b3a0fe9355c46199b69c64f98eba39c3ef5"
+        },
+        {
             "payload": "localhost",
             "description": "localhost",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "aa2b6caa1bc125a1617a779bf35faf2a7ea71114"
-        },
-        {
-            "payload": "lo\u3388host",
-            "description": "Square Cal localhost",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "5001c74bfa2c7dc3a7da2c9181071dd662973a99"
-        },
-        {
-            "payload": "localho\ufb05",
-            "description": "Latin Small Ligature Long S T localhost",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "656205cf0e4d096054ab429fd2dcbb42365f3522"
-        },
-        {
-            "payload": "localho\ufb06",
-            "description": "Latin Small Ligature St localhost",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "ee76a3748efe5600d5df6dd15f3dac84f18686d0"
-        },
-        {
-            "payload": "\\l\\o\\c\\a\\l\\h\\o\\s\\t",
-            "description": "\\l\\o\\c\\a\\l\\h\\o\\s\\t",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "1460b076c5bc1369b1b5e00bada09464ad5a51b5"
-        },
-        {
-            "payload": "null",
-            "description": "CORS vulnerability with trusted null origin",
-            "prefix": "",
-            "suffix": "",
-            "filters": [],
-            "tags": ["URL", "HOST", "CORS"],
-            "id": "2be88ca4242c76e8253ac62474851065032d6833"
-        },
-        {
-            "payload": "<allowed>.localhost",
-            "description": "Localhost allowed domain bypass",
-            "filters": [],
-            "tags": ["URL", "HOST", "CORS"],
-            "id": "97cef03a53eb5bd597deb2eb703e419eb2e70aa1"
         },
         {
             "payload": "\u00adlocalhost",
@@ -387,6 +399,27 @@
             "filters": [],
             "tags": ["URL"],
             "id": "b118f85620996226feec7ad296eef34cfb21ecac"
+        },
+        {
+            "payload": "localho\ufb06",
+            "description": "Latin Small Ligature St localhost",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "ee76a3748efe5600d5df6dd15f3dac84f18686d0"
+        },
+        {
+            "payload": "lo\u3388host",
+            "description": "Square Cal localhost",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "5001c74bfa2c7dc3a7da2c9181071dd662973a99"
+        },
+        {
+            "payload": "localho\ufb05",
+            "description": "Latin Small Ligature Long S T localhost",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "656205cf0e4d096054ab429fd2dcbb42365f3522"
         }
     ]
 }

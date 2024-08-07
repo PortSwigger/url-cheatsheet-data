@@ -36,7 +36,7 @@ async function validateWordlist(schemaValidator, filePath) {
 }
 
 function checkUniqueIds(wordlists) {
-    const idCounts = wordlists.flatMap(wl => wl.payloads).reduce((acc, { id }) => {
+    const idCounts = Array.from(wordlists.values()).flatMap(wl => wl.payloads).reduce((acc, { id }) => {
         acc[id] = (acc[id] || 0) + 1;
         return acc;
     }, {});
@@ -54,7 +54,7 @@ async function aggregateJson() {
     
     const payloadsDir = path.resolve(__dirname, ROOT);
     const files = await readdir(payloadsDir);
-    let wordlists = [];
+    let wordlists = new Map();
 
     for (const file of files.filter(f => f.endsWith('.json'))) {
         const filePath = path.join(payloadsDir, file);
@@ -63,17 +63,22 @@ async function aggregateJson() {
         wordlist.payloads.forEach(element => {
             element.id = generateId(element.prefix, element.payload, element.suffix);
         });
+        let sorted = wordlist.payloads.sort((a,b) => a.payload.localeCompare(b.payload));
+        wordlist.payloads = sorted;
 
-        wordlists.push(wordlist);
+        wordlists.set(file, wordlist);
     }
 
     checkUniqueIds(wordlists);
     
-    const output = `export const PAYLOADS = ${encodeUnicode(JSON.stringify(wordlists, null, 2))};`;
     const distPath = path.join(__dirname, DIST_DIR);
     if (!fs.existsSync(distPath)) {
         fs.mkdirSync(distPath, { recursive: true });
     }
+    for (const [key, value] of wordlists) {
+        await writeFile(path.join(distPath, key), encodeUnicode(JSON.stringify(value, null, 2)));
+    }
+    const output = `export const PAYLOADS = ${encodeUnicode(JSON.stringify(Array.from(wordlists.values()), null, 2))};`;
     await writeFile(path.join(distPath, DIST_FILE), output);
     console.log(`Aggregated JSON files into ${path.join(distPath, DIST_FILE)}`);
 }

@@ -2,67 +2,11 @@
     "name": "Domain allow list bypass",
     "payloads": [
         {
-            "payload": "<attacker>\t<allowed>",
-            "description": "<attacker>%09<allowed>",
+            "payload": "\\\\<attacker>",
+            "description": "Fake relative url \\\\<attacker>",
             "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "ce2c8e63a6bb6fba2914288d40f078dd694abbff"
-        },
-        {
-            "payload": "<attacker>\n<allowed>",
-            "description": "<attacker>%0a<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "f4f6780b88f877fcee4ac1c9d7dd13de8deeadf4"
-        },
-        {
-            "payload": "<attacker>\r<allowed>",
-            "description": "<attacker>%0d<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "78fb2eca1d07af7ce444035e6a6b61d8e4835b8c"
-        },
-        {
-            "payload": "<attacker>\r\n<allowed>",
-            "description": "<attacker>%0d%0a<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "66a50204fb608615e25586ec417334217bac96db"
-        },
-        {
-            "payload": "<attacker>\u2028<allowed>",
-            "description": "<attacker>(U+2028)<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "9b1cb80212d530707269740ff78c2904885e4bb2"
-        },
-        {
-            "payload": "<attacker>\u2029<allowed>",
-            "description": "<attacker>(U+2029)<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "db71091f2fac46753094e03913880af31dd36fec"
-        },
-        {
-            "payload": "<attacker> <allowed>",
-            "description": "<attacker> <allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "d1ea37ce36e8a7777fdc2820bb5df2f6f5732ba5"
-        },
-        {
-            "payload": "<attacker> @<allowed>",
-            "description": "<attacker> @<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "d2c383a55636b0b498b1d5ba405adc112c344e6d"
-        },
-        {
-            "payload": "<attacker> &@<allowed>",
-            "description": "<attacker> &@<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "d6d3be9e6ad635d60b829ede03f732b5f34b78c4"
+            "tags": ["URL"],
+            "id": "4b961c715508b6364e5903a76530cb9436992850"
         },
         {
             "payload": "<allowed> &@<attacker># @<attacker>",
@@ -70,190 +14,6 @@
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "f375cf805e259064a2c66c8b1199413e1c64c77c"
-        },
-        {
-            "payload": "<attacker>;https://<allowed>",
-            "description": "<attacker>;https://<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "91a3fb64d469740b5143d398729917c7f1304ede"
-        },
-        {
-            "payload": "<attacker>:80;http://<allowed>:80",
-            "description": "0://<attacker>:80;http://<allowed>:80",
-            "prefix": "0://",
-            "suffix": "/",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "a7fbb5df752defd55ac7e06bf92d944c9d3d02d4"
-        },
-        {
-            "payload": "<attacker>:\\@@<allowed>",
-            "description": "<attacker>:\\@@<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "25adcd4b65718c2757ee6f27a359465022d45c66"
-        },
-        {
-            "payload": "<attacker>?<allowed>",
-            "description": "<attacker>?<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "b6a6c06f15d152817088029b00bd4675ec2d01d5"
-        },
-        {
-            "filters": [],
-            "tags": ["URL"],
-            "payload": "<attacker>\uff0e<allowed>",
-            "description": "URL-splitting Unicode characters: <attacker>.<allowed>",
-            "id": "a5a32ef167f46cc9c60bdfbc8df69bcdcc2d2181"
-        },
-        {
-            "payload": "<attacker>\u0000<allowed>",
-            "description": "<attacker>%00<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "062664a57fe99c06bc62e6f50628e45a7b586e29"
-        },
-        {
-            "payload": "<attacker>@<allowed>",
-            "description": "<attacker>@<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "a4fae5129ec3f761831939c5ee5af4b7f806e4c1"
-        },
-        {
-            "payload": "<attacker>/?d=<allowed>",
-            "description": "<attacker>/?d=<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "df1cc97d4908cd69bc8394010d421d264335377d"
-        },
-        {
-            "payload": "<attacker>/.<allowed>",
-            "description": "<attacker>/.<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "a84366109526aa67353dbb792254a2ddbfd815f6"
-        },
-        {
-            "payload": "<attacker>/<allowed>",
-            "description": "<attacker>/<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "4bf25d6cb123c7f769df7eabbf25118469bc7d71"
-        },
-        {
-            "payload": "<attacker>///<allowed>",
-            "description": "<attacker>///<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "4fde7ff343832868004a9efaac977f5690390d02"
-        },
-        {
-            "payload": "<attacker>\\.<allowed>",
-            "description": "<attacker>\\.<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "26da92c70bc955f06d0548a6c648a2fa85fb4720"
-        },
-        {
-            "payload": "<attacker>\\<allowed>",
-            "description": "<attacker>\\<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "b107cb5fe53ec93eed7a2fcbc1c7f22d8e797df0"
-        },
-        {
-            "payload": "<attacker>\\@@<allowed>",
-            "description": "<attacker>\\@@<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "89ceb3fd127c9db29d3b7325ce4f6a78daac9d78"
-        },
-        {
-            "payload": "<attacker>\\anything@<allowed>",
-            "description": "<attacker>\\anything@<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "5178bbecff4c51797164b11cafd604dbe2caa2e1"
-        },
-        {
-            "filters": [],
-            "tags": ["URL"],
-            "payload": "<attacker>\uff06<allowed>",
-            "description": "URL-splitting Unicode characters: <attacker>&<allowed>",
-            "id": "952a0e91ff3cbc00a2e6a584cdf119e9e8aceec4"
-        },
-        {
-            "filters": [],
-            "tags": ["URL"],
-            "payload": "<attacker>\ufe60<allowed>",
-            "description": "URL-splitting Unicode characters: <attacker>&<allowed>",
-            "id": "2694aaa7bde0de00353ecd316bce0e2dd3279ade"
-        },
-        {
-            "payload": "<attacker>#<allowed>",
-            "description": "<attacker>#<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "89d168cd432d5b4abe6cfd7068165c950b56174e"
-        },
-        {
-            "payload": "<attacker>#@<allowed>",
-            "description": "<attacker>#@<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "de21ba110890eab43f00fb6692668f63f7e186a1"
-        },
-        {
-            "payload": "<attacker>#\\@<allowed>",
-            "description": "<attacker>#\\@<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "02f0fb3c762691a7b24935a5f4f0a8dd8474dc1f"
-        },
-        {
-            "payload": "<attacker>%0d%0a@<allowed>",
-            "description": "Double URL encoded new line charecter: <attacker>\\r\\n@<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "cb4efe0efee3204ea4e5f6e4578e2faa4888a234"
-        },
-        {
-            "payload": "<attacker>%23@<allowed>",
-            "description": "Double URL encoded # charecter: <attacker>#@<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "e03932bbe1abe0a700f8d8b08a6bd40bb438adc9"
-        },
-        {
-            "payload": "<attacker>%2e@<allowed>",
-            "description": "Double URL encoded / charecter: <attacker>.@<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "041b104bf598a21c7b7851a9b1e81641e95e8e02"
-        },
-        {
-            "payload": "<attacker>%2f@<allowed>",
-            "description": "Double URL encoded / charecter: <attacker>/@<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "091e5d5424da3357b4f6a5f38fc56a0bae9d5070"
-        },
-        {
-            "payload": "<attacker>%3A80.<allowed>",
-            "description": "Double URL encoded : charecter: <attacker>%3A80.<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "eb82bedc764b46a050995ff542237b63698e5637"
-        },
-        {
-            "payload": "<attacker>%FF<allowed>",
-            "description": "Invalid encoding: <attacker>%FF<allowed>",
-            "filters": [],
-            "tags": ["URL", "HOST"],
-            "id": "e37be696bb2f44c834a36582ebc30866d5d1dca6"
         },
         {
             "payload": "<allowed>;.<attacker>",
@@ -319,11 +79,60 @@
             "id": "9b5d746f1d9c93d11d95dcd5c9d7a317779d9cf6"
         },
         {
-            "payload": "<allowed>.$.<attacker>",
-            "description": "Firefox and Safari allows $ as subdomain <allowed>.$.<attacker>",
+            "payload": "<allowed>.,.<attacker>",
+            "description": "Safari allows , as subdomain http://<allowed>.,.<attacker>/",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
-            "id": "abdb4a4b49503a60c2e726d2ef57ab0934fba679"
+            "id": "9824c5214ffca489a7bbc5cb4679d765f95420e0"
+        },
+        {
+            "payload": "<allowed>.;.<attacker>",
+            "description": "Safari allows ; as subdomain http://<allowed>.;.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "eb2585a137116f2e960fed94df3f3dd3d3d55712"
+        },
+        {
+            "payload": "<allowed>.!.<attacker>",
+            "description": "Safari allows ! as subdomain http://<allowed>.!.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "c922e4af20d82b6b09c20ee9d12b6532f72f6f05"
+        },
+        {
+            "payload": "<allowed>.'.<attacker>",
+            "description": "Safari allows ' as subdomain http://<allowed>.'.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "8314214777d8c03c8b560cf05e31b90b35a72100"
+        },
+        {
+            "payload": "<allowed>.(.<attacker>",
+            "description": "Safari allows ( as subdomain http://<allowed>.(.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "8f4aa78c184615ce170933597ecb3bff169d0e21"
+        },
+        {
+            "payload": "<allowed>.).<attacker>",
+            "description": "Safari allows ) as subdomain http://<allowed>.).<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "461e154fed383a59f89bf340ab5d875b6ab8f193"
+        },
+        {
+            "payload": "<allowed>.*.<attacker>",
+            "description": "Safari allows * as subdomain http://<allowed>.*.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "23c04053c485c6bbbc81dda2f9ae19b2a94ec154"
+        },
+        {
+            "payload": "<allowed>.&.<attacker>",
+            "description": "Safari allows & as subdomain http://<allowed>.&.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "0274ee7cc55b6a40d3e205964457296a7a4040db"
         },
         {
             "payload": "<allowed>.+.<attacker>",
@@ -333,76 +142,6 @@
             "id": "8923ea0db18f14de8153269acde97aed1d57fd9f"
         },
         {
-            "payload": "<allowed>.!.<attacker>",
-            "description": "Safari allows ! as subdomain http://<allowed>.!.<attacker>/",
-            "filters": [],
-            "tags": ["URL", "HOST", "CORS"],
-            "id": "df371f068cb71ffdbb3e00912bfee1eeb200541b"
-        },
-        {
-            "payload": "<allowed>.&.<attacker>",
-            "description": "Safari allows & as subdomain http://<allowed>.&.<attacker>/",
-            "filters": [],
-            "tags": ["URL", "HOST", "CORS"],
-            "id": "900e1debc0135aff15df71edbdaed4b8bb137bb0"
-        },
-        {
-            "payload": "<allowed>.'.<attacker>",
-            "description": "Safari allows ' as subdomain http://<allowed>.'.<attacker>/",
-            "filters": [],
-            "tags": ["URL", "HOST", "CORS"],
-            "id": "95626bf2445b51e71485e9ba7c50649001ecc092"
-        },
-        {
-            "payload": "<allowed>.(.<attacker>",
-            "description": "Safari allows ( as subdomain http://<allowed>.(.<attacker>/",
-            "filters": [],
-            "tags": ["URL", "HOST", "CORS"],
-            "id": "0a433d784bfb42d881b80ce9d2bb86e0366a8023"
-        },
-        {
-            "payload": "<allowed>.).<attacker>",
-            "description": "Safari allows ) as subdomain http://<allowed>.).<attacker>/",
-            "filters": [],
-            "tags": ["URL", "HOST", "CORS"],
-            "id": "999076c5ab40cf48250f337e3bce110118987cb6"
-        },
-        {
-            "payload": "<allowed>.*.<attacker>",
-            "description": "Safari allows * as subdomain http://<allowed>.*.<attacker>/",
-            "filters": [],
-            "tags": ["URL", "HOST", "CORS"],
-            "id": "82a2851f186e8abb82eec167931ae31f05881e8b"
-        },
-        {
-            "payload": "<allowed>.,.<attacker>",
-            "description": "Safari allows , as subdomain http://<allowed>.,.<attacker>/",
-            "filters": [],
-            "tags": ["URL", "HOST", "CORS"],
-            "id": "4ddbb116e2818ee909c3565bb82ad40f42caff17"
-        },
-        {
-            "payload": "<allowed>.;.<attacker>",
-            "description": "Safari allows ; as subdomain http://<allowed>.;.<attacker>/",
-            "filters": [],
-            "tags": ["URL", "HOST", "CORS"],
-            "id": "c94fe560fc736ae464152b9a71a483bd96cd7c21"
-        },
-        {
-            "payload": "<allowed>.=.<attacker>",
-            "description": "Safari allows = as subdomain http://<allowed>.=.<attacker>/",
-            "filters": [],
-            "tags": ["URL", "HOST", "CORS"],
-            "id": "8b6fb6c6d98e58b72515ea09f8655fb7b127721c"
-        },
-        {
-            "payload": "<allowed>.~.<attacker>",
-            "description": "Safari allows ~ as subdomain http://<allowed>.~.<attacker>/",
-            "filters": [],
-            "tags": ["URL", "HOST", "CORS"],
-            "id": "35c3e9a600f05606196531b1919402441b02779e"
-        },
-        {
             "payload": "<allowed>.<attacker>",
             "description": "<allowed>.<attacker>",
             "filters": [],
@@ -410,11 +149,25 @@
             "id": "cea2ae177d6c8a71e67ecff51acad083db6b23be"
         },
         {
-            "payload": "<allowed><attacker>",
-            "description": "<allowed><attacker>",
+            "payload": "<allowed>.=.<attacker>",
+            "description": "Safari allows = as subdomain http://<allowed>.=.<attacker>/",
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
-            "id": "11a516d014552a6b9bf2b69fa1f3e63d97345aab"
+            "id": "3e8293142b351c729246a3fcb670b8335b507dca"
+        },
+        {
+            "payload": "<allowed>.~.<attacker>",
+            "description": "Safari allows ~ as subdomain http://<allowed>.~.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "3c4907f111e3f29488a1664d647b4e627c7d20fd"
+        },
+        {
+            "payload": "<allowed>.$.<attacker>",
+            "description": "Firefox and Safari allows $ as subdomain <allowed>.$.<attacker>",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "abdb4a4b49503a60c2e726d2ef57ab0934fba679"
         },
         {
             "payload": "<allowed>@<attacker>",
@@ -439,10 +192,110 @@
         },
         {
             "payload": "<allowed>%23<attacker>",
-            "description": "<allowed>#<attacker>",
+            "description": "Double URL encoded # charecter <allowed>#<attacker>",
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "3b918103dbc3dc7da53262e68e5a3d0106426a6c"
+        },
+        {
+            "payload": "<allowed><attacker>",
+            "description": "<allowed><attacker>",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "11a516d014552a6b9bf2b69fa1f3e63d97345aab"
+        },
+        {
+            "payload": "<attacker>\t<allowed>",
+            "description": "<attacker>\\t<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "ce2c8e63a6bb6fba2914288d40f078dd694abbff"
+        },
+        {
+            "payload": "<attacker>\n<allowed>",
+            "description": "<attacker>\\n<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "f4f6780b88f877fcee4ac1c9d7dd13de8deeadf4"
+        },
+        {
+            "payload": "<attacker>\r\n<allowed>",
+            "description": "<attacker>\\r\\n<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "66a50204fb608615e25586ec417334217bac96db"
+        },
+        {
+            "payload": "<attacker>\r<allowed>",
+            "description": "<attacker>\\r<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "78fb2eca1d07af7ce444035e6a6b61d8e4835b8c"
+        },
+        {
+            "payload": "<attacker>\u2028<allowed>",
+            "description": "<attacker>(U+2028)<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "9b1cb80212d530707269740ff78c2904885e4bb2"
+        },
+        {
+            "payload": "<attacker>\u2029<allowed>",
+            "description": "<attacker>(U+2029)<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "db71091f2fac46753094e03913880af31dd36fec"
+        },
+        {
+            "payload": "<attacker> @<allowed>",
+            "description": "<attacker> @<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "d2c383a55636b0b498b1d5ba405adc112c344e6d"
+        },
+        {
+            "payload": "<attacker> &@<allowed>",
+            "description": "<attacker> &@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "d6d3be9e6ad635d60b829ede03f732b5f34b78c4"
+        },
+        {
+            "payload": "<attacker> <allowed>",
+            "description": "<attacker> <allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "d1ea37ce36e8a7777fdc2820bb5df2f6f5732ba5"
+        },
+        {
+            "payload": "<attacker>;https://<allowed>",
+            "description": "<attacker>;https://<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "91a3fb64d469740b5143d398729917c7f1304ede"
+        },
+        {
+            "payload": "<attacker>:\\@@<allowed>",
+            "description": "<attacker>:\\@@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "25adcd4b65718c2757ee6f27a359465022d45c66"
+        },
+        {
+            "payload": "<attacker>:80;http://<allowed>:80",
+            "description": "0://<attacker>:80;http://<allowed>:80",
+            "prefix": "0://",
+            "suffix": "/",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "a7fbb5df752defd55ac7e06bf92d944c9d3d02d4"
+        },
+        {
+            "payload": "<attacker>?<allowed>",
+            "description": "<attacker>?<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "b6a6c06f15d152817088029b00bd4675ec2d01d5"
         },
         {
             "payload": "<attacker>.<allowed>",
@@ -458,6 +311,160 @@
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "d82a33ae7aa92b0f1f1f5d71a24c0f1197da4e7a"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\uff0e<allowed>",
+            "description": "URL-splitting Unicode characters: <attacker>.<allowed>",
+            "id": "a5a32ef167f46cc9c60bdfbc8df69bcdcc2d2181"
+        },
+        {
+            "payload": "<attacker>@<allowed>",
+            "description": "<attacker>@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "a4fae5129ec3f761831939c5ee5af4b7f806e4c1"
+        },
+        {
+            "payload": "<attacker>/?d=<allowed>",
+            "description": "<attacker>/?d=<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "df1cc97d4908cd69bc8394010d421d264335377d"
+        },
+        {
+            "payload": "<attacker>/.<allowed>",
+            "description": "<attacker>/.<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "a84366109526aa67353dbb792254a2ddbfd815f6"
+        },
+        {
+            "payload": "<attacker>///<allowed>",
+            "description": "<attacker>///<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "4fde7ff343832868004a9efaac977f5690390d02"
+        },
+        {
+            "payload": "<attacker>/<allowed>",
+            "description": "<attacker>/<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "4bf25d6cb123c7f769df7eabbf25118469bc7d71"
+        },
+        {
+            "payload": "<attacker>\\.<allowed>",
+            "description": "<attacker>\\.<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "26da92c70bc955f06d0548a6c648a2fa85fb4720"
+        },
+        {
+            "payload": "<attacker>\\@@<allowed>",
+            "description": "<attacker>\\@@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "89ceb3fd127c9db29d3b7325ce4f6a78daac9d78"
+        },
+        {
+            "payload": "<attacker>\\<allowed>",
+            "description": "<attacker>\\<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "170d49165f74c66700423e9554344c7602ba3cd2"
+        },
+        {
+            "payload": "<attacker>\\anything@<allowed>",
+            "description": "<attacker>\\anything@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "49c3dab705159b4af3ce63b31239e909ee715a7d"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\uff06<allowed>",
+            "description": "URL-splitting Unicode characters: <attacker>&<allowed>",
+            "id": "952a0e91ff3cbc00a2e6a584cdf119e9e8aceec4"
+        },
+        {
+            "filters": [],
+            "tags": ["URL"],
+            "payload": "<attacker>\ufe60<allowed>",
+            "description": "URL-splitting Unicode characters: <attacker>&<allowed>",
+            "id": "2694aaa7bde0de00353ecd316bce0e2dd3279ade"
+        },
+        {
+            "payload": "<attacker>#@<allowed>",
+            "description": "<attacker>#@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "de21ba110890eab43f00fb6692668f63f7e186a1"
+        },
+        {
+            "payload": "<attacker>#\\@<allowed>",
+            "description": "<attacker>#\\@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "02f0fb3c762691a7b24935a5f4f0a8dd8474dc1f"
+        },
+        {
+            "payload": "<attacker>#<allowed>",
+            "description": "<attacker>#<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "89d168cd432d5b4abe6cfd7068165c950b56174e"
+        },
+        {
+            "payload": "<attacker>%0d%0a@<allowed>",
+            "description": "Double URL encoded new line charecter <attacker>\\r\\n@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "cb4efe0efee3204ea4e5f6e4578e2faa4888a234"
+        },
+        {
+            "payload": "<attacker>%23@<allowed>",
+            "description": "Double URL encoded # charecter <attacker>#@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "e03932bbe1abe0a700f8d8b08a6bd40bb438adc9"
+        },
+        {
+            "payload": "<attacker>%2e@<allowed>",
+            "description": "Double URL encoded / charecter <attacker>.@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "041b104bf598a21c7b7851a9b1e81641e95e8e02"
+        },
+        {
+            "payload": "<attacker>%2f@<allowed>",
+            "description": "Double URL encoded / charecter <attacker>/@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "091e5d5424da3357b4f6a5f38fc56a0bae9d5070"
+        },
+        {
+            "payload": "<attacker>%3a80.<allowed>",
+            "description": "Double URL encoded : charecter <attacker>:80.<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "233016a03c92159013a432433cf3bec002c268c6"
+        },
+        {
+            "payload": "<attacker>%ff<allowed>",
+            "description": "Invalid percent encoding: <attacker>%ff<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "5dd6a69ee2a931af86b364526cae2ac042c44720"
+        },
+        {
+            "payload": "<attacker>\u0000<allowed>",
+            "description": "<attacker>(U+0000)<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "062664a57fe99c06bc62e6f50628e45a7b586e29"
         },
         {
             "payload": "anything<allowed>",
@@ -489,6 +496,15 @@
             "id": "13b7547029bf84bcefdb3f80f251700d30826cdf"
         },
         {
+            "payload": "null",
+            "description": "CORS vulnerability with trusted null origin",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["CORS"],
+            "id": "2be88ca4242c76e8253ac62474851065032d6833"
+        },
+        {
             "payload": "s<allowed>",
             "description": "Unencrypted domain ends with http://s<allowed>/",
             "prefix": "http://",
@@ -496,13 +512,6 @@
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "ac08a704b14bdae1ccf4fb93669b2f2935347f4a"
-        },
-        {
-            "payload": "\\\\<attacker>",
-            "description": "Fake relative url \\\\<attacker>",
-            "filters": [],
-            "tags": ["URL"],
-            "id": "4b961c715508b6364e5903a76530cb9436992850"
         }
     ]
 }

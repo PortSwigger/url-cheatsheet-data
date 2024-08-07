@@ -38,15 +38,6 @@
             "id": "8d0e0834582d5db1d122c1da749c14e9f01f3819"
         },
         {
-            "payload": "<attacker>",
-            "description": "http:<attacker>",
-            "prefix": "http:",
-            "suffix": "",
-            "filters": [],
-            "tags": ["URL"],
-            "id": "2fd08ec2a085c73e8f3adde8ced34afaab73510c"
-        },
-        {
             "payload": "@<attacker>",
             "description": "@<attacker>",
             "prefix": "",
@@ -54,15 +45,6 @@
             "filters": [],
             "tags": ["URL"],
             "id": "3a3a1269ad91c19d6836738f88c22c2d2e828a04"
-        },
-        {
-            "payload": "#<attacker>",
-            "description": "#<attacker>",
-            "prefix": "",
-            "suffix": "",
-            "filters": [],
-            "tags": ["URL"],
-            "id": "90158c6e56c687aaf511062990bb692400c61367"
         },
         {
             "payload": "//<attacker>",
@@ -81,6 +63,24 @@
             "filters": [],
             "tags": ["URL"],
             "id": "97aa0ab060c87c215b4031b4602f0a16ff9ee3a2"
+        },
+        {
+            "payload": "#<attacker>",
+            "description": "#<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "90158c6e56c687aaf511062990bb692400c61367"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "http:<attacker>",
+            "prefix": "http:",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "2fd08ec2a085c73e8f3adde8ced34afaab73510c"
         },
         {
             "payload": "<attacker>",
