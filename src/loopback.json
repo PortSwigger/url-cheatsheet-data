@@ -79,6 +79,13 @@
             "id": "e9c454687517744a84a0b94a95c6e5dc30e31795"
         },
         {
+            "payload": "[0000:0000:0000:0000:0000:0000:0000:0000]",
+            "description": "fully-expanded form of [::]",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "8d52c4fcf76fa2e662a3df7903653189af480967"
+        },
+        {
             "payload": "[0000:0000:0000:0000:0000:0000:0000:0001]",
             "description": "fully-expanded form of [::1]",
             "filters": [],
@@ -98,6 +105,13 @@
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "1460b076c5bc1369b1b5e00bada09464ad5a51b5"
+        },
+        {
+            "payload": "<allowed>.local",
+            "description": "Local allowed domain bypass",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "715a06de30c2c88c39fe5e586cb906d436940a40"
         },
         {
             "payload": "<allowed>.localhost",

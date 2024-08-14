@@ -177,6 +177,13 @@
             "id": "6daae0f409c72cbbd99147e4f6ab1dfaf6b88389"
         },
         {
+            "payload": "<allowed>\\;@<attacker>",
+            "description": "<allowed>\\;@<attacker>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "20a4f5a73241252db609f1caafae7da01f8fb5e1"
+        },
+        {
             "payload": "<allowed>&anything@<attacker>",
             "description": "<allowed>&anything@<attacker>",
             "filters": [],
@@ -320,6 +327,13 @@
             "id": "a5a32ef167f46cc9c60bdfbc8df69bcdcc2d2181"
         },
         {
+            "payload": "<attacker>@@<allowed>",
+            "description": "<attacker>@@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "19ae42a42f3c5d92a3e1f9d304552bd9a141fe03"
+        },
+        {
             "payload": "<attacker>@<allowed>",
             "description": "<attacker>@<allowed>",
             "filters": [],
@@ -458,6 +472,20 @@
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "5dd6a69ee2a931af86b364526cae2ac042c44720"
+        },
+        {
+            "payload": "<attacker>+@<allowed>",
+            "description": "<attacker>+@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "5b8e0bc8293698b758b60ada6296d21b35e6ccb7"
+        },
+        {
+            "payload": "<attacker>+&@<allowed>",
+            "description": "<attacker>+&@<allowed>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "3060002806833f0dcf9b0d2fb4964741f25a513a"
         },
         {
             "payload": "<attacker>\u0000<allowed>",

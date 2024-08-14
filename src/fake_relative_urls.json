@@ -2,6 +2,20 @@
     "name": "Fake relative URLs",
     "payloads": [
         {
+            "payload": "\t<attacker>",
+            "description": "Tab \\t allowed inside host",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "b8a72d1541fb0654ff997f3e8f55a10ad30ab8be"
+        },
+        {
+            "payload": "\n<attacker>",
+            "description": "New line \\n allowed inside host",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "dd1670558072e75e82011592a8a20f91e8b24f02"
+        },
+        {
             "payload": "\r\n//<attacker>",
             "description": "New line \\r\\n URL split //<attacker>",
             "prefix": "",
@@ -20,24 +34,6 @@
             "id": "e5ddb6c7744a1dd437293f35b6e3a375e23cba05"
         },
         {
-            "payload": "../../../../../../../..//<attacker>",
-            "description": "../../../../../../../..//<attacker>",
-            "prefix": "",
-            "suffix": "",
-            "filters": [],
-            "tags": ["URL"],
-            "id": "8e1783bc426f5dcf3379a6bea9dc18a68dd974b3"
-        },
-        {
-            "payload": "..\\..\\..\\..\\..\\..\\..\\..\\\\<attacker>",
-            "description": "..\\..\\..\\..\\..\\..\\..\\..\\\\<attacker>",
-            "prefix": "",
-            "suffix": "",
-            "filters": [],
-            "tags": ["URL"],
-            "id": "8d0e0834582d5db1d122c1da749c14e9f01f3819"
-        },
-        {
             "payload": "@<attacker>",
             "description": "@<attacker>",
             "prefix": "",
@@ -47,6 +43,33 @@
             "id": "3a3a1269ad91c19d6836738f88c22c2d2e828a04"
         },
         {
+            "payload": "@<attacker>",
+            "description": "@<attacker>",
+            "prefix": "http:",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "7ce5c7ba8d68acc95deb7c830ff9083278a754d5"
+        },
+        {
+            "payload": "@<attacker>",
+            "description": "@<attacker>",
+            "prefix": "https:",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "4c8666f47acf0e2364c9c84012259329581e6afa"
+        },
+        {
+            "payload": "///<attacker>",
+            "description": "///<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "0cf4ec8da20a63aca1c94998b3599a5c917cfc64"
+        },
+        {
             "payload": "//<attacker>",
             "description": "//<attacker>",
             "prefix": "",
@@ -54,6 +77,42 @@
             "filters": [],
             "tags": ["URL"],
             "id": "b4b07ea11af6244ed0227da67fa422166fd33aa3"
+        },
+        {
+            "payload": "/\\<attacker>",
+            "description": "/\\<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "ace62c59ddbac07c58f262eb265adf1e018e81f4"
+        },
+        {
+            "payload": "\\\t\\<attacker>",
+            "description": "\\\\t\\<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "81d484c4dcee1d197765c2eea55e39541a796977"
+        },
+        {
+            "payload": "\\\n\\<attacker>",
+            "description": "\\\\n\\<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "ba39c2a2b512adc31579b7c3cb484d1dcb722995"
+        },
+        {
+            "payload": "\\/<attacker>",
+            "description": "\\/<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "47839f872c6eb35019b93468e20d4c7a61ac6921"
         },
         {
             "payload": "\\\\<attacker>",
@@ -84,7 +143,16 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0000http://<attacker>",
+            "description": "https:<attacker>",
+            "prefix": "https:",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "5d47ea5913e5d14d9a05c0a87279e8e35824632d"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "(U+0000)http://<attacker>",
             "filters": [],
             "prefix": "\u0000http://",
             "suffix": "",
@@ -93,7 +161,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0001http://<attacker>",
+            "description": "(U+0001)http://<attacker>",
             "filters": [],
             "prefix": "\u0001http://",
             "suffix": "",
@@ -102,7 +170,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0002http://<attacker>",
+            "description": "(U+0002)http://<attacker>",
             "filters": [],
             "prefix": "\u0002http://",
             "suffix": "",
@@ -111,7 +179,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0003http://<attacker>",
+            "description": "(U+0003)http://<attacker>",
             "filters": [],
             "prefix": "\u0003http://",
             "suffix": "",
@@ -120,7 +188,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0004http://<attacker>",
+            "description": "(U+0004)http://<attacker>",
             "filters": [],
             "prefix": "\u0004http://",
             "suffix": "",
@@ -129,7 +197,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0005http://<attacker>",
+            "description": "(U+0005)http://<attacker>",
             "filters": [],
             "prefix": "\u0005http://",
             "suffix": "",
@@ -138,7 +206,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0006http://<attacker>",
+            "description": "(U+0006)http://<attacker>",
             "filters": [],
             "prefix": "\u0006http://",
             "suffix": "",
@@ -147,7 +215,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0007http://<attacker>",
+            "description": "(U+0007)http://<attacker>",
             "filters": [],
             "prefix": "\u0007http://",
             "suffix": "",
@@ -156,7 +224,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\bhttp://<attacker>",
+            "description": "\\bhttp://<attacker>",
             "filters": [],
             "prefix": "\bhttp://",
             "suffix": "",
@@ -165,7 +233,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\thttp://<attacker>",
+            "description": "\\thttp://<attacker>",
             "filters": [],
             "prefix": "\thttp://",
             "suffix": "",
@@ -174,7 +242,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\nhttp://<attacker>",
+            "description": "\\nhttp://<attacker>",
             "filters": [],
             "prefix": "\nhttp://",
             "suffix": "",
@@ -183,7 +251,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u000bhttp://<attacker>",
+            "description": "(U+000b)http://<attacker>",
             "filters": [],
             "prefix": "\u000bhttp://",
             "suffix": "",
@@ -192,7 +260,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\fhttp://<attacker>",
+            "description": "\\fhttp://<attacker>",
             "filters": [],
             "prefix": "\fhttp://",
             "suffix": "",
@@ -201,7 +269,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\rhttp://<attacker>",
+            "description": "\\rhttp://<attacker>",
             "filters": [],
             "prefix": "\rhttp://",
             "suffix": "",
@@ -210,7 +278,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u000ehttp://<attacker>",
+            "description": "(U+000e)http://<attacker>",
             "filters": [],
             "prefix": "\u000ehttp://",
             "suffix": "",
@@ -219,7 +287,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u000fhttp://<attacker>",
+            "description": "(U+000f)http://<attacker>",
             "filters": [],
             "prefix": "\u000fhttp://",
             "suffix": "",
@@ -228,7 +296,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0010http://<attacker>",
+            "description": "(U+0010)http://<attacker>",
             "filters": [],
             "prefix": "\u0010http://",
             "suffix": "",
@@ -237,7 +305,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0011http://<attacker>",
+            "description": "(U+0011)http://<attacker>",
             "filters": [],
             "prefix": "\u0011http://",
             "suffix": "",
@@ -246,7 +314,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0012http://<attacker>",
+            "description": "(U+0012)http://<attacker>",
             "filters": [],
             "prefix": "\u0012http://",
             "suffix": "",
@@ -255,7 +323,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0013http://<attacker>",
+            "description": "(U+0013)http://<attacker>",
             "filters": [],
             "prefix": "\u0013http://",
             "suffix": "",
@@ -264,7 +332,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0014http://<attacker>",
+            "description": "(U+0014)http://<attacker>",
             "filters": [],
             "prefix": "\u0014http://",
             "suffix": "",
@@ -273,7 +341,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0015http://<attacker>",
+            "description": "(U+0015)http://<attacker>",
             "filters": [],
             "prefix": "\u0015http://",
             "suffix": "",
@@ -282,7 +350,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0016http://<attacker>",
+            "description": "(U+0016)http://<attacker>",
             "filters": [],
             "prefix": "\u0016http://",
             "suffix": "",
@@ -291,7 +359,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0017http://<attacker>",
+            "description": "(U+0017)http://<attacker>",
             "filters": [],
             "prefix": "\u0017http://",
             "suffix": "",
@@ -300,7 +368,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0018http://<attacker>",
+            "description": "(U+0018)http://<attacker>",
             "filters": [],
             "prefix": "\u0018http://",
             "suffix": "",
@@ -309,7 +377,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u0019http://<attacker>",
+            "description": "(U+0019)http://<attacker>",
             "filters": [],
             "prefix": "\u0019http://",
             "suffix": "",
@@ -318,7 +386,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u001ahttp://<attacker>",
+            "description": "(U+001a)http://<attacker>",
             "filters": [],
             "prefix": "\u001ahttp://",
             "suffix": "",
@@ -327,7 +395,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u001bhttp://<attacker>",
+            "description": "(U+001b)http://<attacker>",
             "filters": [],
             "prefix": "\u001bhttp://",
             "suffix": "",
@@ -336,7 +404,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u001chttp://<attacker>",
+            "description": "(U+001c)http://<attacker>",
             "filters": [],
             "prefix": "\u001chttp://",
             "suffix": "",
@@ -345,7 +413,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u001dhttp://<attacker>",
+            "description": "(U+001d)http://<attacker>",
             "filters": [],
             "prefix": "\u001dhttp://",
             "suffix": "",
@@ -354,7 +422,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u001ehttp://<attacker>",
+            "description": "(U+001e)http://<attacker>",
             "filters": [],
             "prefix": "\u001ehttp://",
             "suffix": "",
@@ -363,7 +431,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\u001fhttp://<attacker>",
+            "description": "(U+001f)http://<attacker>",
             "filters": [],
             "prefix": "\u001fhttp://",
             "suffix": "",
@@ -381,7 +449,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "h\tttp://<attacker>",
+            "description": "h\\tttp://<attacker>",
             "filters": [],
             "prefix": "h\tttp://",
             "suffix": "",
@@ -390,7 +458,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "h\nttp://<attacker>",
+            "description": "h\\nttp://<attacker>",
             "filters": [],
             "prefix": "h\nttp://",
             "suffix": "",
@@ -399,7 +467,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "h\rttp://<attacker>",
+            "description": "h\\rttp://<attacker>",
             "filters": [],
             "prefix": "h\rttp://",
             "suffix": "",
@@ -408,7 +476,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "http\t://<attacker>",
+            "description": "http\\t://<attacker>",
             "filters": [],
             "prefix": "http\t://",
             "suffix": "",
@@ -417,7 +485,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "http\n://<attacker>",
+            "description": "http\\n://<attacker>",
             "filters": [],
             "prefix": "http\n://",
             "suffix": "",
@@ -426,7 +494,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "http\r://<attacker>",
+            "description": "http\\r://<attacker>",
             "filters": [],
             "prefix": "http\r://",
             "suffix": "",
@@ -435,7 +503,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\thttp\t://<attacker>",
+            "description": "\\thttp\\t://<attacker>",
             "filters": [],
             "prefix": "\thttp\t://",
             "suffix": "",
@@ -444,7 +512,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\nhttp\n://<attacker>",
+            "description": "\\nhttp\\n://<attacker>",
             "filters": [],
             "prefix": "\nhttp\n://",
             "suffix": "",
@@ -453,7 +521,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "\rhttp\r://<attacker>",
+            "description": "\\rhttp\\r://<attacker>",
             "filters": [],
             "prefix": "\rhttp\r://",
             "suffix": "",
@@ -486,6 +554,45 @@
             "suffix": "",
             "tags": ["URL"],
             "id": "9bfc4198128fafe0313943366c68c0c1a1b34fea"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "http:\\<attacker>",
+            "filters": [],
+            "prefix": "http:\\",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "34495dbe03013576ba901438b80a5f0fa99b1ca2"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "http:/<attacker>",
+            "filters": [],
+            "prefix": "http:/",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "5d2743398cd2346eb0a4008174a817498c7f685e"
+        },
+        {
+            "payload": "\u200b<attacker>",
+            "description": "HTML entities ZeroWidthSpace, NegativeVeryThinSpace, NegativeThinSpace, NegativeMediumSpace, NegativeThickSpace (U+200B) allowed inside host",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "a72c5cf60d09c89718bcae7129a21fa21d72ee0a"
+        },
+        {
+            "payload": "\u2060<attacker>",
+            "description": "HTML entity NoBreak (U+2060) allowed inside host",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "c420c74fcd31811b4edf3a681b8e7b676a01eb2a"
+        },
+        {
+            "payload": "\u00ad<attacker>",
+            "description": "HTML entity SHY (U+00AD) allowed inside host",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "e73aa1dc3d1e050be2108a6c73362c35cd9b89b2"
         }
     ]
 }

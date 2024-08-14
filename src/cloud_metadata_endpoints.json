@@ -2,31 +2,31 @@
     "name": "Cloud metadata endpoints",
     "payloads": [
         {
-            "payload": "::ffff:169.254.169.254",
+            "payload": "::FFFF:169.254.169.254",
             "prefix": "http://",
             "suffix": "/latest/meta-data/",
             "description": "IPv4 inside IPv6 representation of 169.254.169.254",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "bcacc49b27207fcb7575ea180f312635bf411ec5"
+            "id": "bd636e84a2c71da7fe1f1f13c11c9ae566e120de"
         },
         {
-            "payload": "[::ffff:169.254.169.254]",
+            "payload": "[::FFFF:169.254.169.254]",
             "prefix": "http://",
             "suffix": "/latest/meta-data/",
             "description": "IPv4 inside IPv6 representation of 169.254.169.254",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "b0efd8668d0d5d3841d8a5c2f257b481e59481d1"
+            "id": "d352abb83fec3a1773269884f002b597fb09e4f4"
         },
         {
-            "payload": "[::\ufb00\ufb00:a9fe:a9fe]",
+            "payload": "[::\ufb00\ufb00:A9FE:A9FE]",
             "prefix": "http://",
             "suffix": "/latest/meta-data/",
-            "description": "Latin Small Ligature Ff [::ffff:a9fe:a9fe]",
+            "description": "Latin Small Ligature Ff [::FFFF:A9FE:A9FE]",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "be9ac402045f11192b8782cf15e0b0302145ee13"
+            "id": "5ca09f9651a39f32fef785914354aeacb3880776"
         },
         {
             "payload": "[::FFFF:A9FE:A9FE]",
@@ -41,28 +41,28 @@
             "payload": "[0:0:0:0:0:\ufb00\ufb00:169.254.169.254]",
             "prefix": "http://",
             "suffix": "/latest/meta-data/",
-            "description": "Latin Small Ligature Ff [0:0:0:0:0:ffff:169.254.169.254]",
+            "description": "Latin Small Ligature Ff [0:0:0:0:0:FFFF:169.254.169.254]",
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "ed6207ac50c89c390c04d3b3aaea61823ea11dd6"
         },
         {
-            "payload": "[0:0:0:0:0:ffff:a9fe:a9fe]",
+            "payload": "[0:0:0:0:0:FFFF:A9FE:A9FE]",
             "prefix": "http://",
             "suffix": "/latest/meta-data/",
-            "description": "Expanded form of [::ffff:a9fe:a9fe]",
+            "description": "Expanded form of [::FFFF:A9FE:A9FE]",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "4f10bf4b85296551464554ad2aaa39df3827403f"
+            "id": "16de66644409c8702be229cae22a0a50262b893c"
         },
         {
-            "payload": "[fd00:ec2::254]",
+            "payload": "[FD00:EC2::254]",
             "prefix": "http://",
             "suffix": "/latest/meta-data/",
             "description": "AWS EC2 IPv6 address https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instancedata-data-retrieval.html",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "ac92c17d4e064ceb35f590d7b7d48f0ec71f213b"
+            "id": "cd81218bf46d4b52310acf6c5888e60858c7b398"
         },
         {
             "payload": "0251.0376.0251.0376",
@@ -126,6 +126,15 @@
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "4ec56b2a29ac77e92f07856ccf340e3560926bb8"
+        },
+        {
+            "payload": "instance-data",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "http://instance-data/latest/meta-data/",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "dff5924f89035a24eca8f5f248451835f0ac2bf3"
         }
     ]
 }
