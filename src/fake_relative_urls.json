@@ -611,7 +611,7 @@
         },
         {
             "payload": "<attacker>",
-            "description": "http:/0/<attacker>",
+            "description": "Refer to 0.0.0.0 without including :// in the scheme section of the absolute URL: http:/0/<attacker>",
             "filters": [],
             "prefix": "http:/0/",
             "suffix": "",
