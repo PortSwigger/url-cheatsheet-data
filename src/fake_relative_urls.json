@@ -88,6 +88,42 @@
             "id": "ace62c59ddbac07c58f262eb265adf1e018e81f4"
         },
         {
+            "payload": "/&bsol;/<attacker>",
+            "description": "/&bsol;/<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "313322b27e208e97462712b7a5bd7b02b17245fe"
+        },
+        {
+            "payload": "/&NewLine;/<attacker>",
+            "description": "/&NewLine;/<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "e61734c6187c7d0405cd28ec2a8d9eb0d60fbfeb"
+        },
+        {
+            "payload": "/&sol;/<attacker>",
+            "description": "/&sol;/<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "7e09e7c68533b6d866790cb66faecd50e7ced908"
+        },
+        {
+            "payload": "/&Tab;/<attacker>",
+            "description": "/&Tab;/<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "7575be7ca7831a7fa9d30ea2d2444a1a2629f487"
+        },
+        {
             "payload": "\\\t\\<attacker>",
             "description": "\\\\t\\<attacker>",
             "prefix": "",
