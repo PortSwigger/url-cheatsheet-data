@@ -524,6 +524,23 @@
             "id": "13b7547029bf84bcefdb3f80f251700d30826cdf"
         },
         {
+            "payload": "localhost.<attacker>",
+            "description": "Localhost regex implementation edge case http://localhost.<attacker>/",
+            "prefix": "http://",
+            "suffix": "/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "32fac2a5d8bafd8c0bff4468d7ebf74c4aacd53a"
+        },
+        {
+            "payload": "localhost.<attacker>",
+            "description": "Localhost regex implementation edge case https://localhost.<attacker>/",
+            "suffix": "/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "ae2410e53af625b7218a1bab2be6561fb200db45"
+        },
+        {
             "payload": "null",
             "description": "CORS vulnerability with trusted null origin",
             "prefix": "",
