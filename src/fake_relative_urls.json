@@ -610,6 +610,15 @@
             "id": "5d2743398cd2346eb0a4008174a817498c7f685e"
         },
         {
+            "payload": "<attacker>",
+            "description": "http:/0/<attacker>",
+            "filters": [],
+            "prefix": "http:/0/",
+            "suffix": "",
+            "tags": ["URL"],
+            "id": "c316f024b09e4fcbc1c7ff5072087354d747fd98"
+        },
+        {
             "payload": "\u200b<attacker>",
             "description": "HTML entities ZeroWidthSpace, NegativeVeryThinSpace, NegativeThinSpace, NegativeMediumSpace, NegativeThickSpace (U+200B) allowed inside host",
             "filters": [],
