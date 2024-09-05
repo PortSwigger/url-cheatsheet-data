@@ -24,7 +24,7 @@ For example, to add a new payload to the `domain_allow_list_bypass.json` file, u
 - The `tags` array should only include supported tags: URL, HOST, and CORS. 
 - The `filters` array should remain empty as it is intended for future releases with advanced filtering options.
 
-Please make sure you search the data to ensure your vector hasn't already been added.
+Please make sure you search the data to ensure your vector hasn't already been added. The json schema validation file available at [schema.json](schema.json)
 Please include your Twitter handle in the pull request message if you would like to be credited with it.
 
 ## License
