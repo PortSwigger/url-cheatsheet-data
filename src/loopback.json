@@ -128,6 +128,15 @@
             "id": "8139fbfe111b7a027c8af94586d38bd8975882d4"
         },
         {
+            "payload": "0:80",
+            "description": "Some clients like curl will interpret 0:80 as valid loopback address",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "92291aafe7b4e4ef6c99c9672e024cc88475e043"
+        },
+        {
             "payload": "0.0.0.0",
             "description": "0.0.0.0",
             "filters": [],
