@@ -305,6 +305,13 @@
             "id": "b6a6c06f15d152817088029b00bd4675ec2d01d5"
         },
         {
+            "payload": "<attacker>..",
+            "description": "Multiple ending dots supported at Chrome and Firefox https://<attacker>../",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "66d3a7e771bb2e20ee8fec1d1b13a196c835d7b9"
+        },
+        {
             "payload": "<attacker>.<allowed>",
             "description": "Unencrypted subdomain <attacker> of <allowed>",
             "prefix": "http://",
