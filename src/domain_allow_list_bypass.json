@@ -163,6 +163,48 @@
             "id": "3c4907f111e3f29488a1664d647b4e627c7d20fd"
         },
         {
+            "payload": "<allowed>.{.<attacker>",
+            "description": "Safari allows { as subdomain http://<allowed>.{.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "8e46533db2e6e27f630a1ce5716eb835ecff1159"
+        },
+        {
+            "payload": "<allowed>.}.<attacker>",
+            "description": "Safari allows } as subdomain http://<allowed>.}.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "d0796bf59bf4fbccad4bbd07e87d722b5cba0b11"
+        },
+        {
+            "payload": "<allowed>.`.<attacker>",
+            "description": "Safari allows ` as subdomain http://<allowed>.`.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "d2e1de8bc41c3353f79681994c291b53899445c4"
+        },
+        {
+            "payload": "<allowed>.£.<attacker>",
+            "description": "Safari allows £ as subdomain http://<allowed>.£.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "a286979889c2a64c7e1e9cc1f8e77637e1b5f27d"
+        },
+        {
+            "payload": "<allowed>.€.<attacker>",
+            "description": "Safari allows € as subdomain http://<allowed>.€.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "f860dbe6b1aaae1dd80031e559353c2be9c581dd"
+        },
+        {
+            "payload": "<allowed>.¥.<attacker>",
+            "description": "Safari allows ¥ as subdomain http://<allowed>.¥.<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "b0a8a8fb71b77e6c462a588e6686cdf723633391"
+        },
+        {
             "payload": "<allowed>.$.<attacker>",
             "description": "Firefox and Safari allows $ as subdomain <allowed>.$.<attacker>",
             "filters": [],
