@@ -107,6 +107,13 @@
             "id": "8314214777d8c03c8b560cf05e31b90b35a72100"
         },
         {
+            "payload": "<allowed>.\".<attacker>",
+            "description": "Safari allows \" as subdomain http://<allowed>.\".<attacker>/",
+            "filters": [],
+            "tags": ["URL", "HOST", "CORS"],
+            "id": "3a40c89cb26a9e502030db755f0b7f5a3a0fca95"
+        },
+        {
             "payload": "<allowed>.(.<attacker>",
             "description": "Safari allows ( as subdomain http://<allowed>.(.<attacker>/",
             "filters": [],
