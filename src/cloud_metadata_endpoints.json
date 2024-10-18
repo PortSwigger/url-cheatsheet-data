@@ -92,6 +92,24 @@
             "id": "a2f3cc5c8f8d932182dc6ece6612390c8baeabf6"
         },
         {
+            "payload": "0xA9.254.0251.0376",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "Cloud metadata endpoint with mixed base",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "e907f3041612f05c0882da7f4886fde65c0badf5"
+        },
+        {
+            "payload": "169.16689662",
+            "prefix": "http://",
+            "suffix": "/latest/meta-data/",
+            "description": "Cloud metadata endpoint 3 byte wide decimal",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "cb6670148a1a265e9de52602d2633cbc1d82ddcb"
+        },
+        {
             "payload": "169.254.169.254",
             "prefix": "http://",
             "suffix": "/latest/meta-data/",
