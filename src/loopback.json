@@ -207,6 +207,20 @@
             "id": "f6b61f293f748dd6e8a1dd2a7aa6a3f99999212c"
         },
         {
+            "payload": "0x7F.0.0000.00000001",
+            "description": "0x7F.0.0000.00000001",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "99b9c563814e3db5053c5df98dd010bc0761554a"
+        },
+        {
+            "payload": "0x7F.0.0000.0001",
+            "description": "0x7F.0.0000.0001",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "91952075876239141a1fd18c1fc2aa378e66cfed"
+        },
+        {
             "payload": "0x7f.0x00.0x00.0x01",
             "description": "0x7f.0x00.0x00.0x01",
             "filters": [],
@@ -219,6 +233,13 @@
             "filters": [],
             "tags": ["URL", "HOST"],
             "id": "9e6f1b0eca78d0b1d7f7c8c74b1c26eb1fa63f48"
+        },
+        {
+            "payload": "0x7F.1",
+            "description": "0x7F.1",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "4601d4059b66ab04e543867dc7ca2c19d7c7b8a1"
         },
         {
             "payload": "0x7f000001",
