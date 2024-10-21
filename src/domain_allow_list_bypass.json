@@ -30,25 +30,25 @@
             "id": "5854dc6ec9467f8dd0cd8c216472732077f24621"
         },
         {
-            "payload": "<allowed>:80:\\@@<attacker>",
-            "description": "<allowed>:80:\\@@<attacker>",
+            "payload": "<allowed>:443:\\@@<attacker>",
+            "description": "<allowed>:443:\\@@<attacker>",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "340ed4ea3a0f06881f8c41177444182efc2eed75"
+            "id": "48d79cb766716cce1cc1f39cc380cf51b4dac701"
         },
         {
-            "payload": "<allowed>:80\\@<attacker>",
-            "description": "<allowed>:80\\@<attacker>",
+            "payload": "<allowed>:443\\@<attacker>",
+            "description": "<allowed>:443\\@<attacker>",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "4383eaa1cd23ac3c40072ed5a5917f24cc5ce3fe"
+            "id": "369787c6210446c59dc50bf9fcae1d33312b320a"
         },
         {
-            "payload": "<allowed>:80#\\@<attacker>",
-            "description": "<allowed>:80#\\@<attacker>",
+            "payload": "<allowed>:443#\\@<attacker>",
+            "description": "<allowed>:443#\\@<attacker>",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "c36e540477165b8ea6426551a6ff34474bbdff36"
+            "id": "b165995680f889ffb89a140c6148f93391a7fc01"
         },
         {
             "payload": "<allowed>:anything@<attacker>",
@@ -502,11 +502,11 @@
             "id": "091e5d5424da3357b4f6a5f38fc56a0bae9d5070"
         },
         {
-            "payload": "<attacker>%3a80.<allowed>",
-            "description": "Double URL encoded : charecter <attacker>:80.<allowed>",
+            "payload": "<attacker>%3a443.<allowed>",
+            "description": "Double URL encoded : charecter <attacker>:443.<allowed>",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "233016a03c92159013a432433cf3bec002c268c6"
+            "id": "b3ad48138f7bfba4479fc55d7d3501ed57d1486b"
         },
         {
             "payload": "<attacker>%ff<allowed>",
@@ -559,11 +559,11 @@
             "id": "648a90417d8fdf11e39a9c164461ab20707a1845"
         },
         {
-            "payload": "foo@<attacker>:80@<allowed>",
-            "description": "foo@<attacker>:80@<allowed>",
+            "payload": "foo@<attacker>:443@<allowed>",
+            "description": "foo@<attacker>:443@<allowed>",
             "filters": [],
             "tags": ["URL", "HOST"],
-            "id": "13b7547029bf84bcefdb3f80f251700d30826cdf"
+            "id": "8372598e5b45fc427bfec93fddd1c57a48a001a7"
         },
         {
             "payload": "localhost.<attacker>",
