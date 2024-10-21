@@ -198,6 +198,13 @@
             "id": "abdb4a4b49503a60c2e726d2ef57ab0934fba679"
         },
         {
+            "payload": "<allowed>[@<attacker>",
+            "description": "Spring Framework CVE-2024-22243 <allowed>[@<attacker>",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "1da2f627d702248b9e61cc23912d2c729e52f878"
+        },
+        {
             "payload": "<allowed>@<attacker>",
             "description": "<allowed>@<attacker>",
             "filters": [],
