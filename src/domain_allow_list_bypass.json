@@ -641,6 +641,24 @@
             "filters": [],
             "tags": ["URL", "HOST", "CORS"],
             "id": "ac08a704b14bdae1ccf4fb93669b2f2935347f4a"
+        },
+        {
+            "payload": "<attacker>",
+            "description": "\/\/<attacker>",
+            "prefix": "\/\/",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "3d9687ba91c6cd5d7eb134c958897429c524758d"
+        },
+        {
+            "payload": "<allowed>@<attacker>",
+            "description": "https://<allowed>@<attacker>",
+            "prefix": "https://",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL", "HOST"],
+            "id": "fcd7ab836b3617b6702a6da978b9d9e04008e244"
         }
     ]
 }
