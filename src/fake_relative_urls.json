@@ -79,6 +79,15 @@
             "id": "b4b07ea11af6244ed0227da67fa422166fd33aa3"
         },
         {
+            "payload": "\\/\\/<attacker>",
+            "description": "\\/\\/<attacker>",
+            "prefix": "",
+            "suffix": "",
+            "filters": [],
+            "tags": ["URL"],
+            "id": "b4b07ea11af6244ed0227da67fa422166fd33aa3"
+        },
+        {
             "payload": "/\\<attacker>",
             "description": "/\\<attacker>",
             "prefix": "",
