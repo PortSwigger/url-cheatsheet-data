@@ -63,7 +63,13 @@ async function aggregateJson() {
         wordlist.payloads.forEach(element => {
             element.id = generateId(element.prefix, element.payload, element.suffix);
         });
-        let sorted = wordlist.payloads.sort((a,b) => a.payload.localeCompare(b.payload));
+        let sorted = wordlist.payloads.sort((a,b) => {
+            const aHasNull = a.description.includes('(U+0000)');
+            const bHasNull = b.description.includes('(U+0000)');
+            if (aHasNull && !bHasNull) return 1;
+            if (!aHasNull && bHasNull) return -1;
+            return a.payload.localeCompare(b.payload);
+        });
         wordlist.payloads = sorted;
 
         wordlists.set(file, wordlist);
